@@ -956,6 +956,7 @@ blockquote em { color: var(--marigold); }
 .lb-figure span { font-size: 14px; color: rgba(244, 236, 218, 0.65); }
 
 .lb-nav, .lb-close {
+  z-index: 4;
   display: grid;
   place-items: center;
   border: 2px solid rgba(244, 236, 218, 0.4);
