@@ -4,19 +4,19 @@ window.TRIP_PHOTOS = {
     {
       "src": "/r2/day-01/001.jpg",
       "thumb": "/r2/thumbs/day-01/001.jpg",
-      "caption": "Photo 1",
+      "caption": "Ready for takeoff",
       "place": "31 July \u00b7 9:59 AM"
     },
     {
       "src": "/r2/day-01/002.jpg",
       "thumb": "/r2/thumbs/day-01/002.jpg",
-      "caption": "Photo 2",
+      "caption": "Seatmates for the flight south",
       "place": "31 July \u00b7 1:05 PM"
     },
     {
       "src": "/r2/day-01/003.jpg",
       "thumb": "/r2/thumbs/day-01/003.jpg",
-      "caption": "Photo 3",
+      "caption": "All together on Costa Rican roads",
       "place": "31 July \u00b7 3:29 PM"
     }
   ],
@@ -24,176 +24,176 @@ window.TRIP_PHOTOS = {
     {
       "src": "/r2/day-02/001.jpg",
       "thumb": "/r2/thumbs/day-02/001.jpg",
-      "caption": "Photo 1",
+      "caption": "Morning above Zarcero",
       "place": "1 August \u00b7 6:31 AM"
     },
     {
       "src": "/r2/videos/day-02/001.mp4",
       "thumb": "/r2/thumbs/videos/day-02/001.jpg",
       "type": "video",
-      "caption": "Video 1",
+      "caption": "Stepping out into the highlands",
       "place": "1 August \u00b7 7:06 AM"
     },
     {
       "src": "/r2/day-02/002.jpg",
       "thumb": "/r2/thumbs/day-02/002.jpg",
-      "caption": "Photo 2",
+      "caption": "Meeting Zarcero's topiary elephant",
       "place": "1 August \u00b7 8:10 AM"
     },
     {
       "src": "/r2/videos/day-02/002.mp4",
       "thumb": "/r2/thumbs/videos/day-02/002.jpg",
       "type": "video",
-      "caption": "Video 2",
+      "caption": "A spin around Zarcero's bandstand",
       "place": "1 August \u00b7 8:19 AM"
     },
     {
       "src": "/r2/videos/day-02/003.mp4",
       "thumb": "/r2/thumbs/videos/day-02/003.jpg",
       "type": "video",
-      "caption": "Video 3",
+      "caption": "A walk through the living sculptures",
       "place": "1 August \u00b7 8:26 AM"
     },
     {
       "src": "/r2/day-02/003.jpg",
       "thumb": "/r2/thumbs/day-02/003.jpg",
-      "caption": "Photo 3",
+      "caption": "At the grotto in Zarcero",
       "place": "1 August \u00b7 8:36 AM"
     },
     {
       "src": "/r2/day-02/004.jpg",
       "thumb": "/r2/thumbs/day-02/004.jpg",
-      "caption": "Photo 4",
+      "caption": "Inside Zarcero's painted church",
       "place": "1 August \u00b7 8:38 AM"
     },
     {
       "src": "/r2/videos/day-02/004.mp4",
       "thumb": "/r2/thumbs/videos/day-02/004.jpg",
       "type": "video",
-      "caption": "Video 4",
+      "caption": "First look at the waterfall",
       "place": "1 August \u00b7 10:28 AM"
     },
     {
       "src": "/r2/day-02/005.jpg",
       "thumb": "/r2/thumbs/day-02/005.jpg",
-      "caption": "Photo 5",
+      "caption": "A misty pose beneath the falls",
       "place": "1 August \u00b7 10:40 AM"
     },
     {
       "src": "/r2/day-02/006.jpg",
       "thumb": "/r2/thumbs/day-02/006.jpg",
-      "caption": "Photo 6",
+      "caption": "Together beneath the falls",
       "place": "1 August \u00b7 10:40 AM"
     },
     {
       "src": "/r2/day-02/007.jpg",
       "thumb": "/r2/thumbs/day-02/007.jpg",
-      "caption": "Photo 7",
+      "caption": "Waterfall faces",
       "place": "1 August \u00b7 10:41 AM"
     },
     {
       "src": "/r2/day-02/008.jpg",
       "thumb": "/r2/thumbs/day-02/008.jpg",
-      "caption": "Photo 8",
+      "caption": "His turn beneath the falls",
       "place": "1 August \u00b7 10:42 AM"
     },
     {
       "src": "/r2/day-02/009.jpg",
       "thumb": "/r2/thumbs/day-02/009.jpg",
-      "caption": "Photo 9",
+      "caption": "Soaked at the base of the falls",
       "place": "1 August \u00b7 12:07 PM"
     },
     {
       "src": "/r2/day-02/010.jpg",
       "thumb": "/r2/thumbs/day-02/010.jpg",
-      "caption": "Photo 10",
+      "caption": "Four smiles in the spray",
       "place": "1 August \u00b7 12:08 PM"
     },
     {
       "src": "/r2/day-02/011.jpg",
       "thumb": "/r2/thumbs/day-02/011.jpg",
-      "caption": "Photo 11",
+      "caption": "Her turn at the waterfall",
       "place": "1 August \u00b7 12:09 PM"
     },
     {
       "src": "/r2/day-02/012.jpg",
       "thumb": "/r2/thumbs/day-02/012.jpg",
-      "caption": "Photo 12",
+      "caption": "Red raincoat, white water",
       "place": "1 August \u00b7 12:10 PM"
     },
     {
       "src": "/r2/videos/day-02/005.mp4",
       "thumb": "/r2/thumbs/videos/day-02/005.jpg",
       "type": "video",
-      "caption": "Video 5",
+      "caption": "Rock-hopping below the falls",
       "place": "1 August \u00b7 12:14 PM"
     },
     {
       "src": "/r2/day-02/013.jpg",
       "thumb": "/r2/thumbs/day-02/013.jpg",
-      "caption": "Photo 13",
+      "caption": "Crossing above the rushing river",
       "place": "1 August \u00b7 12:29 PM"
     },
     {
       "src": "/r2/day-02/014.jpg",
       "thumb": "/r2/thumbs/day-02/014.jpg",
-      "caption": "Photo 14",
+      "caption": "One more waterfall portrait",
       "place": "1 August \u00b7 12:32 PM"
     },
     {
       "src": "/r2/videos/day-02/006.mp4",
       "thumb": "/r2/thumbs/videos/day-02/006.jpg",
       "type": "video",
-      "caption": "Video 6",
+      "caption": "Finding the deepest puddles",
       "place": "1 August \u00b7 12:32 PM"
     },
     {
       "src": "/r2/day-02/015.jpg",
       "thumb": "/r2/thumbs/day-02/015.jpg",
-      "caption": "Photo 15",
+      "caption": "A family selfie by the falls",
       "place": "1 August \u00b7 12:33 PM"
     },
     {
       "src": "/r2/day-02/016.jpg",
       "thumb": "/r2/thumbs/day-02/016.jpg",
-      "caption": "Photo 16",
+      "caption": "Rainy river overlook",
       "place": "1 August \u00b7 12:36 PM"
     },
     {
       "src": "/r2/day-02/017.jpg",
       "thumb": "/r2/thumbs/day-02/017.jpg",
-      "caption": "Photo 17",
+      "caption": "An ankle-deep family portrait",
       "place": "1 August \u00b7 12:42 PM"
     },
     {
       "src": "/r2/day-02/018.jpg",
       "thumb": "/r2/thumbs/day-02/018.jpg",
-      "caption": "Photo 18",
+      "caption": "Out cold on the road to Arenal",
       "place": "1 August \u00b7 1:49 PM"
     },
     {
       "src": "/r2/day-02/019.jpg",
       "thumb": "/r2/thumbs/day-02/019.jpg",
-      "caption": "Photo 19",
+      "caption": "Lunch after the waterfall",
       "place": "1 August \u00b7 2:30 PM"
     },
     {
       "src": "/r2/videos/day-02/007.mp4",
       "thumb": "/r2/thumbs/videos/day-02/007.jpg",
       "type": "video",
-      "caption": "Video 7",
+      "caption": "The waterfall in full force",
       "place": "1 August \u00b7 5:12 PM"
     },
     {
       "src": "/r2/day-02/020.jpg",
       "thumb": "/r2/thumbs/day-02/020.jpg",
-      "caption": "Photo 20",
+      "caption": "Dinner smiles in La Fortuna",
       "place": "1 August \u00b7 7:42 PM"
     },
     {
       "src": "/r2/day-02/021.jpg",
       "thumb": "/r2/thumbs/day-02/021.jpg",
-      "caption": "Photo 21",
+      "caption": "Robes on, vacation mode",
       "place": "1 August \u00b7 9:14 PM"
     }
   ],
@@ -324,41 +324,41 @@ window.TRIP_PHOTOS = {
     {
       "src": "/r2/day-04/001.jpg",
       "thumb": "/r2/thumbs/day-04/001.jpg",
-      "caption": "Photo 1",
+      "caption": "Lunch before the chocolate tour",
       "place": "3 August \u00b7 1:20 PM"
     },
     {
       "src": "/r2/videos/day-04/001.mp4",
       "thumb": "/r2/thumbs/videos/day-04/001.jpg",
       "type": "video",
-      "caption": "Video 1",
+      "caption": "From cacao pod to chocolate",
       "place": "3 August \u00b7 3:33 PM"
     },
     {
       "src": "/r2/videos/day-04/002.mp4",
       "thumb": "/r2/thumbs/videos/day-04/002.jpg",
       "type": "video",
-      "caption": "Video 2",
+      "caption": "The first chocolate taste test",
       "place": "3 August \u00b7 3:35 PM"
     },
     {
       "src": "/r2/videos/day-04/003.mp4",
       "thumb": "/r2/thumbs/videos/day-04/003.jpg",
       "type": "video",
-      "caption": "Video 3",
+      "caption": "Taking a turn at the cacao grinder",
       "place": "3 August \u00b7 3:52 PM"
     },
     {
       "src": "/r2/videos/day-04/004.mp4",
       "thumb": "/r2/thumbs/videos/day-04/004.jpg",
       "type": "video",
-      "caption": "Video 4",
+      "caption": "Pressing fresh cacao beans",
       "place": "3 August \u00b7 3:54 PM"
     },
     {
       "src": "/r2/day-04/002.jpg",
       "thumb": "/r2/thumbs/day-04/002.jpg",
-      "caption": "Photo 2",
+      "caption": "Hot chocolate after the tour",
       "place": "3 August \u00b7 4:21 PM"
     }
   ],
@@ -366,123 +366,123 @@ window.TRIP_PHOTOS = {
     {
       "src": "/r2/day-05/001.jpg",
       "thumb": "/r2/thumbs/day-05/001.jpg",
-      "caption": "Photo 1",
+      "caption": "Trailhead at Arenal 1968",
       "place": "4 August \u00b7 8:38 AM"
     },
     {
       "src": "/r2/day-05/002.jpg",
       "thumb": "/r2/thumbs/day-05/002.jpg",
-      "caption": "Photo 2",
+      "caption": "Three hikers beneath the clouds",
       "place": "4 August \u00b7 9:11 AM"
     },
     {
       "src": "/r2/day-05/003.jpg",
       "thumb": "/r2/thumbs/day-05/003.jpg",
-      "caption": "Photo 3",
+      "caption": "Dabbing above the lava fields",
       "place": "4 August \u00b7 9:12 AM"
     },
     {
       "src": "/r2/day-05/004.jpg",
       "thumb": "/r2/thumbs/day-05/004.jpg",
-      "caption": "Photo 4",
+      "caption": "Together on the old lava flow",
       "place": "4 August \u00b7 9:14 AM"
     },
     {
       "src": "/r2/day-05/005.jpg",
       "thumb": "/r2/thumbs/day-05/005.jpg",
-      "caption": "Photo 5",
+      "caption": "At the summit of the lava trail",
       "place": "4 August \u00b7 9:16 AM"
     },
     {
       "src": "/r2/day-05/006.jpg",
       "thumb": "/r2/thumbs/day-05/006.jpg",
-      "caption": "Photo 6",
+      "caption": "Family portrait on the lava field",
       "place": "4 August \u00b7 9:16 AM"
     },
     {
       "src": "/r2/videos/day-05/001.mp4",
       "thumb": "/r2/thumbs/videos/day-05/001.jpg",
       "type": "video",
-      "caption": "Video 1",
+      "caption": "Back to the hot springs",
       "place": "4 August \u00b7 10:00 AM"
     },
     {
       "src": "/r2/day-05/007.jpg",
       "thumb": "/r2/thumbs/day-05/007.jpg",
-      "caption": "Photo 7",
+      "caption": "Volcano views with the girls",
       "place": "4 August \u00b7 10:25 AM"
     },
     {
       "src": "/r2/day-05/008.jpg",
       "thumb": "/r2/thumbs/day-05/008.jpg",
-      "caption": "Photo 8",
+      "caption": "Arenal hiking partners",
       "place": "4 August \u00b7 10:27 AM"
     },
     {
       "src": "/r2/day-05/009.jpg",
       "thumb": "/r2/thumbs/day-05/009.jpg",
-      "caption": "Photo 9",
+      "caption": "A clear view across Lake Arenal",
       "place": "4 August \u00b7 11:29 AM"
     },
     {
       "src": "/r2/day-05/010.jpg",
       "thumb": "/r2/thumbs/day-05/010.jpg",
-      "caption": "Photo 10",
+      "caption": "A rocky perch beneath the volcano",
       "place": "4 August \u00b7 11:34 AM"
     },
     {
       "src": "/r2/day-05/011.jpg",
       "thumb": "/r2/thumbs/day-05/011.jpg",
-      "caption": "Photo 11",
+      "caption": "Back in the thermal river",
       "place": "4 August \u00b7 2:36 PM"
     },
     {
       "src": "/r2/day-05/012.jpg",
       "thumb": "/r2/thumbs/day-05/012.jpg",
-      "caption": "Photo 12",
+      "caption": "Standing beneath the hot-spring falls",
       "place": "4 August \u00b7 2:40 PM"
     },
     {
       "src": "/r2/day-05/013.jpg",
       "thumb": "/r2/thumbs/day-05/013.jpg",
-      "caption": "Photo 13",
+      "caption": "Waterfall curtain at Tabac\u00f3n",
       "place": "4 August \u00b7 2:40 PM"
     },
     {
       "src": "/r2/day-05/014.jpg",
       "thumb": "/r2/thumbs/day-05/014.jpg",
-      "caption": "Photo 14",
+      "caption": "Drying off after the falls",
       "place": "4 August \u00b7 2:41 PM"
     },
     {
       "src": "/r2/day-05/015.jpg",
       "thumb": "/r2/thumbs/day-05/015.jpg",
-      "caption": "Photo 15",
+      "caption": "Dinner with a couple of regulars",
       "place": "4 August \u00b7 6:09 PM"
     },
     {
       "src": "/r2/day-05/016.jpg",
       "thumb": "/r2/thumbs/day-05/016.jpg",
-      "caption": "Photo 16",
+      "caption": "Date night under the signposts",
       "place": "4 August \u00b7 6:09 PM"
     },
     {
       "src": "/r2/day-05/017.jpg",
       "thumb": "/r2/thumbs/day-05/017.jpg",
-      "caption": "Photo 17",
+      "caption": "Dinner companions in La Fortuna",
       "place": "4 August \u00b7 6:12 PM"
     },
     {
       "src": "/r2/day-05/018.jpg",
       "thumb": "/r2/thumbs/day-05/018.jpg",
-      "caption": "Photo 18",
+      "caption": "A tableside visit from the house cat",
       "place": "4 August \u00b7 6:47 PM"
     },
     {
       "src": "/r2/videos/day-05/002.mp4",
       "thumb": "/r2/thumbs/videos/day-05/002.jpg",
       "type": "video",
-      "caption": "Video 2",
+      "caption": "Making friends with the dinner cat",
       "place": "4 August \u00b7 6:48 PM"
     }
   ],
@@ -490,111 +490,111 @@ window.TRIP_PHOTOS = {
     {
       "src": "/r2/day-06/001.jpg",
       "thumb": "/r2/thumbs/day-06/001.jpg",
-      "caption": "Photo 1",
+      "caption": "Coffee stop at Caf\u00e9 Sloffee",
       "place": "5 August \u00b7 9:32 AM"
     },
     {
       "src": "/r2/day-06/002.jpg",
       "thumb": "/r2/thumbs/day-06/002.jpg",
-      "caption": "Photo 2",
+      "caption": "Leaving our mark on the coffee wall",
       "place": "5 August \u00b7 9:36 AM"
     },
     {
       "src": "/r2/day-06/003.jpg",
       "thumb": "/r2/thumbs/day-06/003.jpg",
-      "caption": "Photo 3",
+      "caption": "Coffee for the long drive south",
       "place": "5 August \u00b7 9:44 AM"
     },
     {
       "src": "/r2/day-06/004.jpg",
       "thumb": "/r2/thumbs/day-06/004.jpg",
-      "caption": "Photo 4",
+      "caption": "Road-trip lunch on the Costanera",
       "place": "5 August \u00b7 1:30 PM"
     },
     {
       "src": "/r2/day-06/005.jpg",
       "thumb": "/r2/thumbs/day-06/005.jpg",
-      "caption": "Photo 5",
+      "caption": "First crocodile lookout",
       "place": "5 August \u00b7 2:11 PM"
     },
     {
       "src": "/r2/videos/day-06/001.mp4",
       "thumb": "/r2/thumbs/videos/day-06/001.jpg",
       "type": "video",
-      "caption": "Video 1",
+      "caption": "Crocodiles below the T\u00e1rcoles bridge",
       "place": "5 August \u00b7 2:14 PM"
     },
     {
       "src": "/r2/day-06/006.jpg",
       "thumb": "/r2/thumbs/day-06/006.jpg",
-      "caption": "Photo 6",
+      "caption": "A crocodile on the riverbank",
       "place": "5 August \u00b7 2:18 PM"
     },
     {
       "src": "/r2/day-06/007.jpg",
       "thumb": "/r2/thumbs/day-06/007.jpg",
-      "caption": "Photo 7",
+      "caption": "Cruising through the T\u00e1rcoles",
       "place": "5 August \u00b7 2:18 PM"
     },
     {
       "src": "/r2/day-06/008.jpg",
       "thumb": "/r2/thumbs/day-06/008.jpg",
-      "caption": "Photo 8",
+      "caption": "Crocodile watching from the bridge",
       "place": "5 August \u00b7 2:18 PM"
     },
     {
       "src": "/r2/day-06/009.jpg",
       "thumb": "/r2/thumbs/day-06/009.jpg",
-      "caption": "Photo 9",
+      "caption": "Two crocodiles in the shallows",
       "place": "5 August \u00b7 2:18 PM"
     },
     {
       "src": "/r2/day-06/010.jpg",
       "thumb": "/r2/thumbs/day-06/010.jpg",
-      "caption": "Photo 10",
+      "caption": "We made it to Jac\u00f3",
       "place": "5 August \u00b7 3:08 PM"
     },
     {
       "src": "/r2/day-06/011.jpg",
       "thumb": "/r2/thumbs/day-06/011.jpg",
-      "caption": "Photo 11",
+      "caption": "Pacific overlook above Jac\u00f3",
       "place": "5 August \u00b7 3:09 PM"
     },
     {
       "src": "/r2/day-06/012.jpg",
       "thumb": "/r2/thumbs/day-06/012.jpg",
-      "caption": "Photo 12",
+      "caption": "Three smiles over the Pacific",
       "place": "5 August \u00b7 3:09 PM"
     },
     {
       "src": "/r2/day-06/013.jpg",
       "thumb": "/r2/thumbs/day-06/013.jpg",
-      "caption": "Photo 13",
+      "caption": "First look at the room in Uvita",
       "place": "5 August \u00b7 5:47 PM"
     },
     {
       "src": "/r2/videos/day-06/002.mp4",
       "thumb": "/r2/thumbs/videos/day-06/002.jpg",
       "type": "video",
-      "caption": "Video 2",
+      "caption": "Opening the doors to the Pacific",
       "place": "5 August \u00b7 5:47 PM"
     },
     {
       "src": "/r2/day-06/014.jpg",
       "thumb": "/r2/thumbs/day-06/014.jpg",
-      "caption": "Photo 14",
+      "caption": "Settling into the villa",
       "place": "5 August \u00b7 6:10 PM"
     },
     {
       "src": "/r2/day-06/015.jpg",
       "thumb": "/r2/thumbs/day-06/015.jpg",
-      "caption": "Photo 15",
+      "caption": "Poolside dinner after the drive",
       "place": "5 August \u00b7 6:51 PM"
     },
     {
       "src": "/r2/day-06/016.jpg",
       "thumb": "/r2/thumbs/day-06/016.jpg",
-      "caption": "Photo 16",
+      "caption": "Night-swim smiles",
       "place": "5 August \u00b7 8:04 PM"
     }
   ],
@@ -602,264 +602,264 @@ window.TRIP_PHOTOS = {
     {
       "src": "/r2/day-07/001.jpg",
       "thumb": "/r2/thumbs/day-07/001.jpg",
-      "caption": "Photo 1",
+      "caption": "Boat ride to Corcovado",
       "place": "6 August \u00b7 8:39 AM"
     },
     {
       "src": "/r2/day-07/002.jpg",
       "thumb": "/r2/thumbs/day-07/002.jpg",
-      "caption": "Photo 2",
+      "caption": "Welcome to San Pedrillo",
       "place": "6 August \u00b7 9:06 AM"
     },
     {
       "src": "/r2/videos/day-07/001.mp4",
       "thumb": "/r2/thumbs/videos/day-07/001.jpg",
       "type": "video",
-      "caption": "Video 1",
+      "caption": "A bat tucked beneath a palm leaf",
       "place": "6 August \u00b7 9:15 AM"
     },
     {
       "src": "/r2/day-07/003.jpg",
       "thumb": "/r2/thumbs/day-07/003.jpg",
-      "caption": "Photo 3",
+      "caption": "Golden orb-weaver in her web",
       "place": "6 August \u00b7 9:22 AM"
     },
     {
       "src": "/r2/day-07/004.jpg",
       "thumb": "/r2/thumbs/day-07/004.jpg",
-      "caption": "Photo 4",
+      "caption": "A monkey high in the canopy",
       "place": "6 August \u00b7 9:40 AM"
     },
     {
       "src": "/r2/day-07/005.jpg",
       "thumb": "/r2/thumbs/day-07/005.jpg",
-      "caption": "Photo 5",
+      "caption": "Something hiding in the vines",
       "place": "6 August \u00b7 9:54 AM"
     },
     {
       "src": "/r2/day-07/006.jpg",
       "thumb": "/r2/thumbs/day-07/006.jpg",
-      "caption": "Photo 6",
+      "caption": "An owl tucked into the branches",
       "place": "6 August \u00b7 10:10 AM"
     },
     {
       "src": "/r2/day-07/007.jpg",
       "thumb": "/r2/thumbs/day-07/007.jpg",
-      "caption": "Photo 7",
+      "caption": "A woodpecker at work",
       "place": "6 August \u00b7 10:13 AM"
     },
     {
       "src": "/r2/day-07/008.jpg",
       "thumb": "/r2/thumbs/day-07/008.jpg",
-      "caption": "Photo 8",
+      "caption": "Leafcutter ants on the march",
       "place": "6 August \u00b7 10:21 AM"
     },
     {
       "src": "/r2/day-07/009.jpg",
       "thumb": "/r2/thumbs/day-07/009.jpg",
-      "caption": "Photo 9",
+      "caption": "Owl eyes in the rainforest",
       "place": "6 August \u00b7 10:32 AM"
     },
     {
       "src": "/r2/day-07/010.jpg",
       "thumb": "/r2/thumbs/day-07/010.jpg",
-      "caption": "Photo 10",
+      "caption": "Scarlet macaw in the canopy",
       "place": "6 August \u00b7 10:36 AM"
     },
     {
       "src": "/r2/videos/day-07/002.mp4",
       "thumb": "/r2/thumbs/videos/day-07/002.jpg",
       "type": "video",
-      "caption": "Video 2",
+      "caption": "Scarlet macaws overhead",
       "place": "6 August \u00b7 10:36 AM"
     },
     {
       "src": "/r2/day-07/011.jpg",
       "thumb": "/r2/thumbs/day-07/011.jpg",
-      "caption": "Photo 11",
+      "caption": "Trail snack in San Pedrillo",
       "place": "6 August \u00b7 10:38 AM"
     },
     {
       "src": "/r2/day-07/012.jpg",
       "thumb": "/r2/thumbs/day-07/012.jpg",
-      "caption": "Photo 12",
+      "caption": "Rainforest smiles",
       "place": "6 August \u00b7 10:41 AM"
     },
     {
       "src": "/r2/day-07/013.jpg",
       "thumb": "/r2/thumbs/day-07/013.jpg",
-      "caption": "Photo 13",
+      "caption": "Beachcombers at San Pedrillo",
       "place": "6 August \u00b7 10:41 AM"
     },
     {
       "src": "/r2/day-07/014.jpg",
       "thumb": "/r2/thumbs/day-07/014.jpg",
-      "caption": "Photo 14",
+      "caption": "At the edge of Corcovado",
       "place": "6 August \u00b7 10:44 AM"
     },
     {
       "src": "/r2/day-07/015.jpg",
       "thumb": "/r2/thumbs/day-07/015.jpg",
-      "caption": "Photo 15",
+      "caption": "Tracks in the sand",
       "place": "6 August \u00b7 11:43 AM"
     },
     {
       "src": "/r2/day-07/016.jpg",
       "thumb": "/r2/thumbs/day-07/016.jpg",
-      "caption": "Photo 16",
+      "caption": "A tropical bird on watch",
       "place": "6 August \u00b7 12:07 PM"
     },
     {
       "src": "/r2/day-07/017.jpg",
       "thumb": "/r2/thumbs/day-07/017.jpg",
-      "caption": "Photo 17",
+      "caption": "Four hikers beneath a forest giant",
       "place": "6 August \u00b7 12:18 PM"
     },
     {
       "src": "/r2/day-07/018.jpg",
       "thumb": "/r2/thumbs/day-07/018.jpg",
-      "caption": "Photo 18",
+      "caption": "Corcovado beach portrait",
       "place": "6 August \u00b7 12:31 PM"
     },
     {
       "src": "/r2/day-07/019.jpg",
       "thumb": "/r2/thumbs/day-07/019.jpg",
-      "caption": "Photo 19",
+      "caption": "Rocky shoreline at low tide",
       "place": "6 August \u00b7 12:31 PM"
     },
     {
       "src": "/r2/videos/day-07/003.mp4",
       "thumb": "/r2/thumbs/videos/day-07/003.jpg",
       "type": "video",
-      "caption": "Video 3",
+      "caption": "Wading ashore at San Pedrillo",
       "place": "6 August \u00b7 1:06 PM"
     },
     {
       "src": "/r2/day-07/020.jpg",
       "thumb": "/r2/thumbs/day-07/020.jpg",
-      "caption": "Photo 20",
+      "caption": "Back across the tidal flats",
       "place": "6 August \u00b7 1:06 PM"
     },
     {
       "src": "/r2/videos/day-07/004.mp4",
       "thumb": "/r2/thumbs/videos/day-07/004.jpg",
       "type": "video",
-      "caption": "Video 4",
+      "caption": "Low tide at Corcovado",
       "place": "6 August \u00b7 3:15 PM"
     },
     {
       "src": "/r2/day-07/021.jpg",
       "thumb": "/r2/thumbs/day-07/021.jpg",
-      "caption": "Photo 21",
+      "caption": "A wave from the tidal flats",
       "place": "6 August \u00b7 3:16 PM"
     },
     {
       "src": "/r2/videos/day-07/005.mp4",
       "thumb": "/r2/thumbs/videos/day-07/005.jpg",
       "type": "video",
-      "caption": "Video 5",
+      "caption": "Family selfie on the flats",
       "place": "6 August \u00b7 3:17 PM"
     },
     {
       "src": "/r2/day-07/022.jpg",
       "thumb": "/r2/thumbs/day-07/022.jpg",
-      "caption": "Photo 22",
+      "caption": "One last selfie before the boat",
       "place": "6 August \u00b7 3:18 PM"
     },
     {
       "src": "/r2/day-07/023.jpg",
       "thumb": "/r2/thumbs/day-07/023.jpg",
-      "caption": "Photo 23",
+      "caption": "Dressed for dinner above Uvita",
       "place": "6 August \u00b7 5:48 PM"
     },
     {
       "src": "/r2/day-07/024.jpg",
       "thumb": "/r2/thumbs/day-07/024.jpg",
-      "caption": "Photo 24",
+      "caption": "Mother and son at sunset",
       "place": "6 August \u00b7 5:48 PM"
     },
     {
       "src": "/r2/day-07/025.jpg",
       "thumb": "/r2/thumbs/day-07/025.jpg",
-      "caption": "Photo 25",
+      "caption": "Wrapped up at the overlook",
       "place": "6 August \u00b7 5:49 PM"
     },
     {
       "src": "/r2/day-07/026.jpg",
       "thumb": "/r2/thumbs/day-07/026.jpg",
-      "caption": "Photo 26",
+      "caption": "Together above the rainforest",
       "place": "6 August \u00b7 5:50 PM"
     },
     {
       "src": "/r2/day-07/027.jpg",
       "thumb": "/r2/thumbs/day-07/027.jpg",
-      "caption": "Photo 27",
+      "caption": "A sunset kiss above Uvita",
       "place": "6 August \u00b7 5:51 PM"
     },
     {
       "src": "/r2/day-07/028.jpg",
       "thumb": "/r2/thumbs/day-07/028.jpg",
-      "caption": "Photo 28",
+      "caption": "Mother-daughter dinner portrait",
       "place": "6 August \u00b7 5:52 PM"
     },
     {
       "src": "/r2/day-07/029.jpg",
       "thumb": "/r2/thumbs/day-07/029.jpg",
-      "caption": "Photo 29",
+      "caption": "Watching the mist roll through",
       "place": "6 August \u00b7 5:54 PM"
     },
     {
       "src": "/r2/day-07/030.jpg",
       "thumb": "/r2/thumbs/day-07/030.jpg",
-      "caption": "Photo 30",
+      "caption": "One quiet look at the rainforest",
       "place": "6 August \u00b7 5:54 PM"
     },
     {
       "src": "/r2/day-07/031.jpg",
       "thumb": "/r2/thumbs/day-07/031.jpg",
-      "caption": "Photo 31",
+      "caption": "Scarlet macaw close-up",
       "place": "6 August \u00b7 6:34 PM"
     },
     {
       "src": "/r2/day-07/032.jpg",
       "thumb": "/r2/thumbs/day-07/032.jpg",
-      "caption": "Photo 32",
+      "caption": "Firelight after Corcovado",
       "place": "6 August \u00b7 8:10 PM"
     },
     {
       "src": "/r2/day-07/033.jpg",
       "thumb": "/r2/thumbs/day-07/033.jpg",
-      "caption": "Photo 33",
+      "caption": "A nightcap by the fire",
       "place": "6 August \u00b7 8:12 PM"
     },
     {
       "src": "/r2/day-07/034.jpg",
       "thumb": "/r2/thumbs/day-07/034.jpg",
-      "caption": "Photo 34",
+      "caption": "Toasting by the firepit",
       "place": "6 August \u00b7 8:13 PM"
     },
     {
       "src": "/r2/day-07/035.jpg",
       "thumb": "/r2/thumbs/day-07/035.jpg",
-      "caption": "Photo 35",
+      "caption": "Firelight portrait",
       "place": "6 August \u00b7 8:14 PM"
     },
     {
       "src": "/r2/day-07/036.jpg",
       "thumb": "/r2/thumbs/day-07/036.jpg",
-      "caption": "Photo 36",
+      "caption": "An evening by the firepit",
       "place": "6 August \u00b7 8:14 PM"
     },
     {
       "src": "/r2/day-07/037.jpg",
       "thumb": "/r2/thumbs/day-07/037.jpg",
-      "caption": "Photo 37",
+      "caption": "A green visitor after dark",
       "place": "6 August \u00b7 9:16 PM"
     },
     {
       "src": "/r2/day-07/038.jpg",
       "thumb": "/r2/thumbs/day-07/038.jpg",
-      "caption": "Photo 38",
+      "caption": "Leaf wings in perfect camouflage",
       "place": "6 August \u00b7 9:23 PM"
     }
   ],
@@ -867,87 +867,87 @@ window.TRIP_PHOTOS = {
     {
       "src": "/r2/day-08/001.jpg",
       "thumb": "/r2/thumbs/day-08/001.jpg",
-      "caption": "Photo 1",
+      "caption": "Breakfast before Ca\u00f1o Island",
       "place": "7 August \u00b7 6:52 AM"
     },
     {
       "src": "/r2/day-08/002.jpg",
       "thumb": "/r2/thumbs/day-08/002.jpg",
-      "caption": "Photo 2",
+      "caption": "A little history before the boat",
       "place": "7 August \u00b7 10:45 AM"
     },
     {
       "src": "/r2/day-08/003.jpg",
       "thumb": "/r2/thumbs/day-08/003.jpg",
-      "caption": "Photo 3",
+      "caption": "Waiting above the bay",
       "place": "7 August \u00b7 10:49 AM"
     },
     {
       "src": "/r2/day-08/004.jpg",
       "thumb": "/r2/thumbs/day-08/004.jpg",
-      "caption": "Photo 4",
+      "caption": "Ready for the boat",
       "place": "7 August \u00b7 11:04 AM"
     },
     {
       "src": "/r2/day-08/005.jpg",
       "thumb": "/r2/thumbs/day-08/005.jpg",
-      "caption": "Photo 5",
+      "caption": "Ca\u00f1o Island, here we come",
       "place": "7 August \u00b7 11:05 AM"
     },
     {
       "src": "/r2/day-08/006.jpg",
       "thumb": "/r2/thumbs/day-08/006.jpg",
-      "caption": "Photo 6",
+      "caption": "Life jackets on",
       "place": "7 August \u00b7 12:11 PM"
     },
     {
       "src": "/r2/videos/day-08/001.mp4",
       "thumb": "/r2/thumbs/videos/day-08/001.jpg",
       "type": "video",
-      "caption": "Video 1",
+      "caption": "Riding out across the Pacific",
       "place": "7 August \u00b7 12:49 PM"
     },
     {
       "src": "/r2/day-08/007.jpg",
       "thumb": "/r2/thumbs/day-08/007.jpg",
-      "caption": "Photo 7",
+      "caption": "A toucan overhead",
       "place": "7 August \u00b7 3:27 PM"
     },
     {
       "src": "/r2/videos/day-08/002.mp4",
       "thumb": "/r2/thumbs/videos/day-08/002.jpg",
       "type": "video",
-      "caption": "Video 2",
+      "caption": "Toucan in the treetops",
       "place": "7 August \u00b7 3:28 PM"
     },
     {
       "src": "/r2/day-08/008.jpg",
       "thumb": "/r2/thumbs/day-08/008.jpg",
-      "caption": "Photo 8",
+      "caption": "Back at the infinity pool",
       "place": "7 August \u00b7 3:55 PM"
     },
     {
       "src": "/r2/day-08/010.jpg",
       "thumb": "/r2/thumbs/day-08/010.jpg",
-      "caption": "Photo 10",
+      "caption": "Poolside peace signs",
       "place": "7 August \u00b7 4:07 PM"
     },
     {
       "src": "/r2/day-08/011.jpg",
       "thumb": "/r2/thumbs/day-08/011.jpg",
-      "caption": "Photo 11",
+      "caption": "Cooling off among the rocks",
       "place": "7 August \u00b7 4:11 PM"
     },
     {
       "src": "/r2/day-08/012.jpg",
       "thumb": "/r2/thumbs/day-08/012.jpg",
-      "caption": "Photo 12",
+      "caption": "Tucked into the waterfall pool",
       "place": "7 August \u00b7 4:27 PM"
     },
     {
       "src": "/r2/day-08/013.jpg",
       "thumb": "/r2/thumbs/day-08/013.jpg",
-      "caption": "Photo 13",
+      "caption": "Evening at the infinity pool",
       "place": "7 August \u00b7 5:22 PM"
     }
   ],
@@ -956,167 +956,167 @@ window.TRIP_PHOTOS = {
       "src": "/r2/videos/day-09/001.mp4",
       "thumb": "/r2/thumbs/videos/day-09/001.jpg",
       "type": "video",
-      "caption": "Video 1",
+      "caption": "One last look over Vista Celestial",
       "place": "8 August \u00b7 6:28 AM"
     },
     {
       "src": "/r2/day-09/001.jpg",
       "thumb": "/r2/thumbs/day-09/001.jpg",
-      "caption": "Photo 1",
+      "caption": "A quiet morning above Uvita",
       "place": "8 August \u00b7 7:01 AM"
     },
     {
       "src": "/r2/day-09/002.jpg",
       "thumb": "/r2/thumbs/day-09/002.jpg",
-      "caption": "Photo 2",
+      "caption": "Last breakfast by the infinity pool",
       "place": "8 August \u00b7 7:29 AM"
     },
     {
       "src": "/r2/day-09/003.jpg",
       "thumb": "/r2/thumbs/day-09/003.jpg",
-      "caption": "Photo 3",
+      "caption": "Father-son road-trip selfie",
       "place": "8 August \u00b7 8:06 AM"
     },
     {
       "src": "/r2/day-09/004.jpg",
       "thumb": "/r2/thumbs/day-09/004.jpg",
-      "caption": "Photo 4",
+      "caption": "Goodbye to Vista Celestial",
       "place": "8 August \u00b7 8:08 AM"
     },
     {
       "src": "/r2/day-09/005.jpg",
       "thumb": "/r2/thumbs/day-09/005.jpg",
-      "caption": "Photo 5",
+      "caption": "Climbing the Iraz\u00fa letters",
       "place": "8 August \u00b7 1:24 PM"
     },
     {
       "src": "/r2/day-09/006.jpg",
       "thumb": "/r2/thumbs/day-09/006.jpg",
-      "caption": "Photo 6",
+      "caption": "Taking on Iraz\u00fa one letter at a time",
       "place": "8 August \u00b7 1:25 PM"
     },
     {
       "src": "/r2/day-09/007.jpg",
       "thumb": "/r2/thumbs/day-09/007.jpg",
-      "caption": "Photo 7",
+      "caption": "At the edge of Iraz\u00fa's crater",
       "place": "8 August \u00b7 1:29 PM"
     },
     {
       "src": "/r2/day-09/008.jpg",
       "thumb": "/r2/thumbs/day-09/008.jpg",
-      "caption": "Photo 8",
+      "caption": "Welcome to Iraz\u00fa Volcano",
       "place": "8 August \u00b7 1:30 PM"
     },
     {
       "src": "/r2/day-09/009.jpg",
       "thumb": "/r2/thumbs/day-09/009.jpg",
-      "caption": "Photo 9",
+      "caption": "A heart-shaped stop at the crater",
       "place": "8 August \u00b7 1:38 PM"
     },
     {
       "src": "/r2/videos/day-09/002.mp4",
       "thumb": "/r2/thumbs/videos/day-09/002.jpg",
       "type": "video",
-      "caption": "Video 2",
+      "caption": "A windy hello from Iraz\u00fa",
       "place": "8 August \u00b7 1:38 PM"
     },
     {
       "src": "/r2/day-09/010.jpg",
       "thumb": "/r2/thumbs/day-09/010.jpg",
-      "caption": "Photo 10",
+      "caption": "The heart above the crater",
       "place": "8 August \u00b7 1:38 PM"
     },
     {
       "src": "/r2/day-09/011.jpg",
       "thumb": "/r2/thumbs/day-09/011.jpg",
-      "caption": "Photo 11",
+      "caption": "Crater-rim family selfie",
       "place": "8 August \u00b7 1:39 PM"
     },
     {
       "src": "/r2/day-09/012.jpg",
       "thumb": "/r2/thumbs/day-09/012.jpg",
-      "caption": "Photo 12",
+      "caption": "Windblown at the crater",
       "place": "8 August \u00b7 1:41 PM"
     },
     {
       "src": "/r2/videos/day-09/003.mp4",
       "thumb": "/r2/thumbs/videos/day-09/003.jpg",
       "type": "video",
-      "caption": "Video 3",
+      "caption": "Windy smiles over Iraz\u00fa",
       "place": "8 August \u00b7 1:41 PM"
     },
     {
       "src": "/r2/day-09/013.jpg",
       "thumb": "/r2/thumbs/day-09/013.jpg",
-      "caption": "Photo 13",
+      "caption": "All four at the crater rim",
       "place": "8 August \u00b7 1:42 PM"
     },
     {
       "src": "/r2/videos/day-09/004.mp4",
       "thumb": "/r2/thumbs/videos/day-09/004.jpg",
       "type": "video",
-      "caption": "Video 4",
+      "caption": "A family moment above the clouds",
       "place": "8 August \u00b7 1:42 PM"
     },
     {
       "src": "/r2/day-09/014.jpg",
       "thumb": "/r2/thumbs/day-09/014.jpg",
-      "caption": "Photo 14",
+      "caption": "Crater-rim travel partners",
       "place": "8 August \u00b7 1:42 PM"
     },
     {
       "src": "/r2/day-09/015.jpg",
       "thumb": "/r2/thumbs/day-09/015.jpg",
-      "caption": "Photo 15",
+      "caption": "A hug above the clouds",
       "place": "8 August \u00b7 1:43 PM"
     },
     {
       "src": "/r2/day-09/016.jpg",
       "thumb": "/r2/thumbs/day-09/016.jpg",
-      "caption": "Photo 16",
+      "caption": "Cloud-level cuddles",
       "place": "8 August \u00b7 1:43 PM"
     },
     {
       "src": "/r2/day-09/017.jpg",
       "thumb": "/r2/thumbs/day-09/017.jpg",
-      "caption": "Photo 17",
+      "caption": "A crater-rim lift",
       "place": "8 August \u00b7 1:43 PM"
     },
     {
       "src": "/r2/day-09/018.jpg",
       "thumb": "/r2/thumbs/day-09/018.jpg",
-      "caption": "Photo 18",
+      "caption": "Three beneath the Iraz\u00fa heart",
       "place": "8 August \u00b7 1:45 PM"
     },
     {
       "src": "/r2/day-09/019.jpg",
       "thumb": "/r2/thumbs/day-09/019.jpg",
-      "caption": "Photo 19",
+      "caption": "Driving across the crater floor",
       "place": "8 August \u00b7 1:53 PM"
     },
     {
       "src": "/r2/videos/day-09/005.mp4",
       "thumb": "/r2/thumbs/videos/day-09/005.jpg",
       "type": "video",
-      "caption": "Video 5",
+      "caption": "Checking the altitude at Iraz\u00fa",
       "place": "8 August \u00b7 1:54 PM"
     },
     {
       "src": "/r2/day-09/020.jpg",
       "thumb": "/r2/thumbs/day-09/020.jpg",
-      "caption": "Photo 20",
+      "caption": "Cartago below the clouds",
       "place": "8 August \u00b7 2:15 PM"
     },
     {
       "src": "/r2/day-09/021.jpg",
       "thumb": "/r2/thumbs/day-09/021.jpg",
-      "caption": "Photo 21",
+      "caption": "Overlooking Cartago",
       "place": "8 August \u00b7 2:15 PM"
     },
     {
       "src": "/r2/day-09/022.jpg",
       "thumb": "/r2/thumbs/day-09/022.jpg",
-      "caption": "Photo 22",
+      "caption": "Back in the car for the airport",
       "place": "8 August \u00b7 3:56 PM"
     }
   ]
