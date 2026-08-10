@@ -347,7 +347,40 @@ a { color: inherit; }
     linear-gradient(0deg, rgba(4, 22, 16, 0.9), transparent 52%);
 }
 
-.hero-inner { width: var(--shell); margin-inline: var(--shell-l) var(--shell-r); max-width: 900px; }
+.hero-family-frame {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  right: clamp(24px, 6vw, 100px);
+  width: clamp(280px, 32vw, 470px);
+  margin: 0;
+  padding: 11px 11px 14px;
+  background: var(--paper);
+  color: var(--jungle);
+  box-shadow: 0 22px 54px rgba(2, 18, 12, 0.42);
+  transform: translateY(-50%) rotate(2deg);
+}
+.hero-family-frame img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.hero-family-frame figcaption {
+  padding: 10px 4px 0;
+  font-family: var(--display);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  width: var(--shell);
+  margin-inline: var(--shell-l) var(--shell-r);
+  max-width: 900px;
+}
 
 .kicker {
   display: inline-block;
@@ -842,6 +875,28 @@ blockquote {
 blockquote em { color: var(--marigold); }
 .outro-copy { max-width: 44ch; margin: 0 auto 34px; color: rgba(244, 236, 218, 0.78); }
 .outro .eyebrow { margin-bottom: 16px; }
+.outro-photo {
+  width: min(920px, 100%);
+  margin: clamp(48px, 7vw, 88px) auto 0;
+  padding: 12px 12px 16px;
+  background: var(--paper);
+  color: var(--jungle);
+  box-shadow: 0 24px 56px rgba(2, 18, 12, 0.36);
+  transform: rotate(-1deg);
+}
+.outro-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.outro-photo figcaption {
+  padding-top: 10px;
+  font-family: var(--display);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
 
 .site-footer {
   display: flex;
@@ -986,6 +1041,16 @@ blockquote em { color: var(--marigold); }
   .day-body { grid-template-columns: 1fr; gap: 24px; }
   .hero-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 10px; }
   .hero { padding-top: 108px; }
+  .hero-family-frame {
+    position: relative;
+    top: auto;
+    right: auto;
+    align-self: flex-end;
+    width: min(48vw, 420px);
+    margin: 0 var(--gutter) 20px;
+    transform: rotate(2deg);
+  }
+  .hero-inner { max-width: none; }
   .lightbox { grid-template-columns: 1fr; grid-template-areas: "figure"; }
   .lb-figure { grid-area: figure; }
   .lb-nav { position: absolute; bottom: 22px; }
@@ -1000,6 +1065,12 @@ blockquote em { color: var(--marigold); }
   .reel-viewport { gap: 14px; }
   .btn { padding: 13px 22px; font-size: 15px; }
   .hero-actions .btn { flex: 1 1 auto; justify-content: center; }
+  .hero-family-frame {
+    align-self: center;
+    width: min(82vw, 360px);
+    margin: 0 auto 22px;
+    transform: rotate(-1deg);
+  }
 }
 
 /* Desktop only: hold every shell block clear of the fixed rail. */
@@ -1010,6 +1081,7 @@ blockquote em { color: var(--marigold); }
     --shell-r: auto;
     --reel-pad: var(--rail-w);
   }
+  .hero-inner { max-width: min(900px, 58vw); }
   .stop-list { grid-template-columns: repeat(7, minmax(0, 1fr)); }
 }
 
