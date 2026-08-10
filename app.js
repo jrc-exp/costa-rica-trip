@@ -3,7 +3,7 @@
    --------------------------------------------------------------------------
    REAL PHOTOS
    `scripts/process_media.py` groups the camera originals by capture date,
-   writes optimized local JPEGs to assets/photos/, and generates
+   writes optimized media and cropped carousel thumbnails to assets/photos/, and generates
    assets/photos/photos.js. Everything else (reel, counter, dots, lightbox)
    picks them up automatically. Until that manifest exists, a day shows the
    painted placeholder cards using the captions in PLANNED.
@@ -175,9 +175,7 @@ function buildReel(host) {
     slide.className = 'slide';
     const media = item.pending
       ? scene(day, i)
-      : item.type === 'video'
-        ? `<video src="${item.src}" muted loop playsinline preload="metadata"></video>`
-        : `<img src="${item.src}" alt="${item.caption}" loading="lazy" />`;
+      : `<img src="${item.thumb || item.src}" alt="${item.caption}" loading="lazy" decoding="async" />`;
     slide.innerHTML = `
       <button class="slide-btn" type="button" aria-label="Open “${item.caption}” full size">
         <span class="slide-frame">
@@ -260,6 +258,7 @@ const lb = document.getElementById('lightbox');
 const lbStage = document.getElementById('lb-stage');
 const lbCaption = document.getElementById('lb-caption');
 const lbMeta = document.getElementById('lb-meta');
+const lbFullscreen = document.getElementById('lb-fullscreen');
 let lbDay = 1;
 let lbIndex = 0;
 let lastFocus = null;
@@ -282,9 +281,27 @@ function renderLightbox() {
     : item.type === 'video'
       ? `<video src="${item.src}" controls autoplay muted loop playsinline></video>`
       : `<img src="${item.src}" alt="${item.caption}" />`;
+  lbFullscreen.hidden = item.type !== 'video' || item.pending;
   lbCaption.textContent = item.caption;
   lbMeta.textContent = `Day ${lbDay} · ${item.place}${item.pending ? ' · photo to come' : ''}`;
   goTo(reel, lbIndex);
+}
+
+async function fullscreenVideo() {
+  const video = lbStage.querySelector('video');
+  if (!video) return;
+  try {
+    if (video.webkitEnterFullscreen) {
+      video.webkitEnterFullscreen();
+      return;
+    }
+    await video.requestFullscreen();
+    if (video.videoWidth > video.videoHeight && screen.orientation?.lock) {
+      await screen.orientation.lock('landscape');
+    }
+  } catch (_) {
+    // Fullscreen and orientation locking vary by browser; native controls remain available.
+  }
 }
 
 function stepLightbox(delta) {
@@ -302,6 +319,7 @@ function closeLightbox() {
 lb.querySelector('.lb-close').addEventListener('click', closeLightbox);
 lb.querySelector('.lb-prev').addEventListener('click', () => stepLightbox(-1));
 lb.querySelector('.lb-next').addEventListener('click', () => stepLightbox(1));
+lbFullscreen.addEventListener('click', fullscreenVideo);
 lb.addEventListener('click', (e) => { if (e.target === lb) closeLightbox(); });
 document.addEventListener('keydown', (e) => {
   if (lb.hidden) return;

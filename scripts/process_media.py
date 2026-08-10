@@ -2,8 +2,8 @@
 """Organize trip originals and build browser-friendly media derivatives.
 
 The raw camera files live in ``assets/Costa Rica/day-XX``.  This script creates
-smaller progressive JPEGs and H.264 MP4s in ``assets/photos/`` and a manifest
-the static site can load locally. Originals are never resized or overwritten.
+smaller progressive JPEGs, H.264 MP4s, cropped carousel thumbnails, and a
+manifest in ``assets/photos/``. Originals are never resized or overwritten.
 """
 
 from __future__ import annotations
@@ -26,6 +26,8 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parents[1]
 ORIGINALS = ROOT / "assets" / "Costa Rica"
 WEB = ROOT / "assets" / "photos"
+PUBLIC_MEDIA_ROOT = "/r2"
+THUMB_SIZE = "640x480"
 IMAGE_SUFFIXES = {".jpg", ".jpeg", ".heic"}
 VIDEO_SUFFIXES = {".mp4", ".mov"}
 MEDIA_SUFFIXES = IMAGE_SUFFIXES | VIDEO_SUFFIXES
@@ -229,6 +231,40 @@ def optimize_video(source: Path, destination: Path) -> None:
         temporary.unlink(missing_ok=True)
 
 
+def optimize_thumbnail(source: Path, destination: Path, is_video: bool) -> None:
+    """Create a small 4:3 poster used by the on-page carousel."""
+
+    temporary = destination.with_suffix(".partial.jpg")
+    temporary.unlink(missing_ok=True)
+    try:
+        if is_video:
+            subprocess.run(
+                [
+                    "ffmpeg", "-hide_banner", "-loglevel", "error", "-y",
+                    "-ss", "0.1", "-i", str(source), "-frames:v", "1",
+                    "-vf", "scale=640:480:force_original_aspect_ratio=increase,crop=640:480",
+                    "-q:v", "4", str(temporary),
+                ],
+                check=True,
+            )
+        else:
+            subprocess.run(
+                [
+                    "convert", str(source), "-auto-orient", "-thumbnail", f"{THUMB_SIZE}^",
+                    "-gravity", "center", "-extent", THUMB_SIZE, "-strip", "-interlace", "Plane",
+                    "-quality", "76", str(temporary),
+                ],
+                check=True,
+            )
+        temporary.replace(destination)
+    finally:
+        temporary.unlink(missing_ok=True)
+
+
+def public_url(path: Path) -> str:
+    return f"{PUBLIC_MEDIA_ROOT}/{path.relative_to(WEB).as_posix()}"
+
+
 def day_label(day: int) -> str:
     date = next(date for date, mapped_day in DAY_BY_DATE.items() if mapped_day == day)
     return datetime.strptime(date, "%Y-%m-%d").strftime("%-d %B")
@@ -247,6 +283,7 @@ def main() -> int:
             if day_dir.is_dir():
                 shutil.rmtree(day_dir)
         shutil.rmtree(WEB / "videos", ignore_errors=True)
+        shutil.rmtree(WEB / "thumbs", ignore_errors=True)
         (WEB / "photos.js").unlink(missing_ok=True)
 
     records = []
@@ -281,10 +318,12 @@ def main() -> int:
             if is_video:
                 video_number += 1
                 output = WEB / "videos" / f"day-{day:02d}" / f"{video_number:03d}.mp4"
+                thumbnail = WEB / "thumbs" / "videos" / f"day-{day:02d}" / f"{video_number:03d}.jpg"
                 caption = f"Video {video_number}"
             else:
                 photo_number += 1
                 output = WEB / f"day-{day:02d}" / f"{photo_number:03d}.jpg"
+                thumbnail = WEB / "thumbs" / f"day-{day:02d}" / f"{photo_number:03d}.jpg"
                 caption = f"Photo {photo_number}"
             requested_video = args.video is None or (is_video and video_number == args.video)
             if args.day in (None, day) and requested_video and (args.force or not output.exists()):
@@ -296,9 +335,14 @@ def main() -> int:
                     optimize_heic(path, output)
                 else:
                     optimize_jpeg(path, output)
+            if args.day in (None, day) and requested_video and output.exists() and (args.force or not thumbnail.exists()):
+                thumbnail.parent.mkdir(parents=True, exist_ok=True)
+                print(f"Thumbnailing {output.relative_to(ROOT)} -> {thumbnail.relative_to(ROOT)}")
+                optimize_thumbnail(output, thumbnail, is_video)
             photos_by_day[day].append(
                 {
-                    "src": output.relative_to(ROOT).as_posix(),
+                    "src": public_url(output),
+                    "thumb": public_url(thumbnail),
                     **({"type": "video"} if is_video else {}),
                     "caption": caption,
                     "place": f"{day_label(day)} · {taken.strftime('%-I:%M %p')}",
