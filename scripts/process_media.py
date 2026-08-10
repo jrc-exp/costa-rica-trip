@@ -34,6 +34,28 @@ MEDIA_SUFFIXES = IMAGE_SUFFIXES | VIDEO_SUFFIXES
 # Keep excluded media in the derivative set and R2 so restoring it only
 # requires removing an entry here and rebuilding the manifest.
 EXCLUDED_MEDIA = {(8, "photo", 9)}
+MEDIA_CAPTIONS = {
+    (3, "photo", 1): "Rainy start at Místico",
+    (3, "video", 1): "Above the canopy in the rain",
+    (3, "photo", 2): "Together on the hanging bridge",
+    (3, "photo", 3): "A sloth-themed Valentine",
+    (3, "photo", 4): "Tiny eggs beneath a leaf",
+    (3, "photo", 5): "A golden snail on the trail",
+    (3, "photo", 6): "Strawberry poison dart frog",
+    (3, "photo", 7): "Lunch with Arenal in view",
+    (3, "photo", 8): "Swinging beneath the volcano",
+    (3, "photo", 9): "Framed by Arenal",
+    (3, "photo", 10): "The best seat in front of Arenal",
+    (3, "photo", 11): "Family portrait under Arenal",
+    (3, "photo", 12): "Taking in the volcano together",
+    (3, "photo", 13): "Mother-daughter moment at Arenal",
+    (3, "photo", 14): "Arenal all to herself",
+    (3, "photo", 15): "Church stop in La Fortuna",
+    (3, "photo", 16): "Red-eyed tree frog after dark",
+    (3, "photo", 17): "A tiny frog calling in the rain",
+    (3, "photo", 18): "Eight legs after dark",
+    (3, "photo", 19): "A sleepy sloth in the canopy",
+}
 DAY_BY_DATE = {
     "2026-07-31": 1,
     "2026-08-01": 2,
@@ -328,6 +350,8 @@ def main() -> int:
                 output = WEB / f"day-{day:02d}" / f"{photo_number:03d}.jpg"
                 thumbnail = WEB / "thumbs" / f"day-{day:02d}" / f"{photo_number:03d}.jpg"
                 caption = f"Photo {photo_number}"
+            media_key = (day, "video" if is_video else "photo", video_number if is_video else photo_number)
+            caption = MEDIA_CAPTIONS.get(media_key, caption)
             requested_video = args.video is None or (is_video and video_number == args.video)
             if args.day in (None, day) and requested_video and (args.force or not output.exists()):
                 output.parent.mkdir(parents=True, exist_ok=True)
@@ -342,7 +366,6 @@ def main() -> int:
                 thumbnail.parent.mkdir(parents=True, exist_ok=True)
                 print(f"Thumbnailing {output.relative_to(ROOT)} -> {thumbnail.relative_to(ROOT)}")
                 optimize_thumbnail(output, thumbnail, is_video)
-            media_key = (day, "video" if is_video else "photo", video_number if is_video else photo_number)
             if media_key not in EXCLUDED_MEDIA:
                 photos_by_day[day].append(
                     {

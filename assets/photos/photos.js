@@ -201,122 +201,122 @@ window.TRIP_PHOTOS = {
     {
       "src": "/r2/day-03/001.jpg",
       "thumb": "/r2/thumbs/day-03/001.jpg",
-      "caption": "Photo 1",
+      "caption": "Rainy start at M\u00edstico",
       "place": "2 August \u00b7 9:06 AM"
     },
     {
       "src": "/r2/videos/day-03/001.mp4",
       "thumb": "/r2/thumbs/videos/day-03/001.jpg",
       "type": "video",
-      "caption": "Video 1",
+      "caption": "Above the canopy in the rain",
       "place": "2 August \u00b7 9:37 AM"
     },
     {
       "src": "/r2/day-03/002.jpg",
       "thumb": "/r2/thumbs/day-03/002.jpg",
-      "caption": "Photo 2",
+      "caption": "Together on the hanging bridge",
       "place": "2 August \u00b7 9:38 AM"
     },
     {
       "src": "/r2/day-03/003.jpg",
       "thumb": "/r2/thumbs/day-03/003.jpg",
-      "caption": "Photo 3",
+      "caption": "A sloth-themed Valentine",
       "place": "2 August \u00b7 10:48 AM"
     },
     {
       "src": "/r2/day-03/004.jpg",
       "thumb": "/r2/thumbs/day-03/004.jpg",
-      "caption": "Photo 4",
+      "caption": "Tiny eggs beneath a leaf",
       "place": "2 August \u00b7 10:50 AM"
     },
     {
       "src": "/r2/day-03/005.jpg",
       "thumb": "/r2/thumbs/day-03/005.jpg",
-      "caption": "Photo 5",
+      "caption": "A golden snail on the trail",
       "place": "2 August \u00b7 10:51 AM"
     },
     {
       "src": "/r2/day-03/006.jpg",
       "thumb": "/r2/thumbs/day-03/006.jpg",
-      "caption": "Photo 6",
+      "caption": "Strawberry poison dart frog",
       "place": "2 August \u00b7 10:51 AM"
     },
     {
       "src": "/r2/day-03/007.jpg",
       "thumb": "/r2/thumbs/day-03/007.jpg",
-      "caption": "Photo 7",
+      "caption": "Lunch with Arenal in view",
       "place": "2 August \u00b7 12:26 PM"
     },
     {
       "src": "/r2/day-03/008.jpg",
       "thumb": "/r2/thumbs/day-03/008.jpg",
-      "caption": "Photo 8",
+      "caption": "Swinging beneath the volcano",
       "place": "2 August \u00b7 12:52 PM"
     },
     {
       "src": "/r2/day-03/009.jpg",
       "thumb": "/r2/thumbs/day-03/009.jpg",
-      "caption": "Photo 9",
+      "caption": "Framed by Arenal",
       "place": "2 August \u00b7 12:54 PM"
     },
     {
       "src": "/r2/day-03/010.jpg",
       "thumb": "/r2/thumbs/day-03/010.jpg",
-      "caption": "Photo 10",
+      "caption": "The best seat in front of Arenal",
       "place": "2 August \u00b7 1:36 PM"
     },
     {
       "src": "/r2/day-03/011.jpg",
       "thumb": "/r2/thumbs/day-03/011.jpg",
-      "caption": "Photo 11",
+      "caption": "Family portrait under Arenal",
       "place": "2 August \u00b7 1:38 PM"
     },
     {
       "src": "/r2/day-03/012.jpg",
       "thumb": "/r2/thumbs/day-03/012.jpg",
-      "caption": "Photo 12",
+      "caption": "Taking in the volcano together",
       "place": "2 August \u00b7 1:43 PM"
     },
     {
       "src": "/r2/day-03/013.jpg",
       "thumb": "/r2/thumbs/day-03/013.jpg",
-      "caption": "Photo 13",
+      "caption": "Mother-daughter moment at Arenal",
       "place": "2 August \u00b7 1:44 PM"
     },
     {
       "src": "/r2/day-03/014.jpg",
       "thumb": "/r2/thumbs/day-03/014.jpg",
-      "caption": "Photo 14",
+      "caption": "Arenal all to herself",
       "place": "2 August \u00b7 1:45 PM"
     },
     {
       "src": "/r2/day-03/015.jpg",
       "thumb": "/r2/thumbs/day-03/015.jpg",
-      "caption": "Photo 15",
+      "caption": "Church stop in La Fortuna",
       "place": "2 August \u00b7 2:05 PM"
     },
     {
       "src": "/r2/day-03/016.jpg",
       "thumb": "/r2/thumbs/day-03/016.jpg",
-      "caption": "Photo 16",
+      "caption": "Red-eyed tree frog after dark",
       "place": "2 August \u00b7 6:07 PM"
     },
     {
       "src": "/r2/day-03/017.jpg",
       "thumb": "/r2/thumbs/day-03/017.jpg",
-      "caption": "Photo 17",
+      "caption": "A tiny frog calling in the rain",
       "place": "2 August \u00b7 6:44 PM"
     },
     {
       "src": "/r2/day-03/018.jpg",
       "thumb": "/r2/thumbs/day-03/018.jpg",
-      "caption": "Photo 18",
+      "caption": "Eight legs after dark",
       "place": "2 August \u00b7 6:59 PM"
     },
     {
       "src": "/r2/day-03/019.jpg",
       "thumb": "/r2/thumbs/day-03/019.jpg",
-      "caption": "Photo 19",
+      "caption": "A sleepy sloth in the canopy",
       "place": "2 August \u00b7 7:06 PM"
     }
   ],
