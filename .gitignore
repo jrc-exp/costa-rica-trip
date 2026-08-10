@@ -1,0 +1,10 @@
+# Trip photos and video media — kept local for now.
+/assets/Costa Rica/
+/assets/photos/
+
+# Python-generated cache files.
+__pycache__/
+*.py[cod]
+
+# Local credentials/configuration.
+/r2.txt

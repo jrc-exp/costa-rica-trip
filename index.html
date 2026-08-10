@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nine days across Costa Rica — volcano, cloud forest and Pacific. A family trip journal, July 31 – August 8, 2026." />
+    <meta name="theme-color" content="#0F4B34" />
+    <title>Nine Days in Costa Rica — The Crawford Family, 2026</title>
+
+    <meta property="og:title" content="Nine Days in Costa Rica" />
+    <meta property="og:description" content="Volcano, cloud forest and Pacific — a family trip journal." />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="assets/wheel.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400..900;1,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..900,0..100,0..1;1,9..144,400..900,0..100,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="vendor/leaflet.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#journal">Skip to the day-by-day journal</a>
+
+    <!-- ── The trail: fixed progress rail + jump nav. Desktop = left column, mobile = top bar. ── -->
+    <nav class="trail" id="trail" aria-label="Jump to a day">
+      <p class="trail-legend" id="trail-legend">The trip</p>
+      <div class="trail-line" aria-hidden="true">
+        <svg class="trail-wheel" viewBox="0 0 100 100" aria-hidden="true">
+          <g class="wheel-spin">
+            <circle cx="50" cy="50" r="47" class="w-rim" />
+            <circle cx="50" cy="50" r="38" class="w-band" />
+            <g class="w-spokes">
+              <path d="M50 6V94M6 50h88M19 19l62 62M81 19L19 81" />
+            </g>
+            <circle cx="50" cy="50" r="20" class="w-rosette" />
+            <circle cx="50" cy="50" r="11" class="w-petal" />
+            <circle cx="50" cy="50" r="4.5" class="w-hub" />
+          </g>
+        </svg>
+      </div>
+      <ol class="trail-stops"></ol>
+    </nav>
+
+    <header class="masthead">
+      <a class="brand" href="#top">
+        <span class="brand-wheel" aria-hidden="true"></span>
+        <span class="brand-text">Costa&nbsp;Rica <b>2026</b></span>
+      </a>
+      <a class="masthead-cta" href="#journal">See the days <span aria-hidden="true">↓</span></a>
+    </header>
+
+    <main id="top">
+      <!-- ── Hero ── -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-photo" role="img" aria-label="Rainforest canopy in the Costa Rican highlands"></div>
+        <div class="hero-veil" aria-hidden="true"></div>
+
+        <div class="hero-inner">
+          <p class="kicker">A family trip journal · 31 July – 8 August 2026</p>
+          <h1 id="hero-title">Nine days<br />across <em>Costa&nbsp;Rica</em></h1>
+          <p class="hero-lede">
+            One small country, three completely different worlds: the cloud-wrapped
+            highlands, a volcano wrapped in rainforest, and the wild green edge of
+            the Pacific. This is where we went, and what we saw.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#journal">Start the journey</a>
+            <a class="btn btn-ghost" href="#map-section">See the route map</a>
+          </div>
+        </div>
+
+        <dl class="hero-facts">
+          <div><dt>Days</dt><dd>9</dd></div>
+          <div><dt>Kilometres driven</dt><dd>682</dd></div>
+          <div><dt>Boat trips</dt><dd>2</dd></div>
+          <div><dt>National parks</dt><dd>1</dd></div>
+        </dl>
+      </section>
+
+      <div class="band-divider" aria-hidden="true"></div>
+
+      <!-- ── Route map ── -->
+      <section class="route" id="map-section" aria-labelledby="route-title">
+        <div class="route-head">
+          <p class="eyebrow">The route</p>
+          <h2 id="route-title">A loop from the airport,<br class="wide-only" /> out to the ocean, and back</h2>
+          <p class="route-lede">
+            We started and ended at San José. In between: north into the mountains,
+            west to the volcano, then a long crossing to the Pacific coast and a
+            climb home over the mountains and up to the Irazú crater.
+          </p>
+        </div>
+
+        <div class="map-frame">
+          <div id="map" aria-label="Map of the driving route through Costa Rica"></div>
+          <div class="map-hud">
+            <span class="dot" aria-hidden="true"></span>
+            <span id="map-label">The whole trip · 682 km</span>
+          </div>
+          <button class="map-reset" type="button" id="map-reset">
+            <span aria-hidden="true">↺</span> Whole trip
+          </button>
+        </div>
+
+        <p class="map-key">Each colour is one day's drive. The two dotted loops are the boat
+          days out of Uvita and back — down the coast to Corcovado, then out to Caño Island.
+          Tap a pin — or any place below — to jump to that day.</p>
+        <ol class="stop-list" aria-label="Places on the route"></ol>
+      </section>
+
+      <!-- ── Journal intro ── -->
+      <section class="journal-intro" id="journal-intro">
+        <p class="eyebrow">Day by day</p>
+        <h2>Nine days, in order</h2>
+        <p>
+          Each day has its own colour, its own place on the map, and its own roll of
+          pictures. Swipe or use the arrows to look through them — tap any picture to
+          see it big.
+        </p>
+      </section>
+
+      <!-- ── The journal ── -->
+      <div class="journal" id="journal">
+        <article class="day" id="day-1" data-day="1" aria-labelledby="day-1-title">
+          <div class="day-inner">
+            <header class="day-head">
+              <p class="day-tag"><b>Day 01</b><span>Friday, 31 July</span></p>
+              <h3 id="day-1-title">Into the green hills</h3>
+              <p class="day-route">San José <span aria-hidden="true">→</span> Zarcero</p>
+            </header>
+            <div class="day-body">
+              <div class="day-text">
+              <p class="day-lede">
+                We land, find the car, and point it north. The road climbs out of the
+                valley into dairy country and rain, and ends in a cool little town famous
+                for hedges clipped into archways and animals.
+              </p>
+
+                <button class="btn btn-map" type="button" data-focus-map="1">Show day 1 on the map <span aria-hidden="true">↗</span></button>
+              </div>
+              <div class="day-meta">
+                <ul class="tags"><li>Arrival</li><li>Mountain drive</li><li>Topiary garden</li></ul>
+                <dl class="facts">
+                  <div><dt>Altitude</dt><dd>1,736 m</dd></div>
+                  <div><dt>Roads</dt><dd>Ruta 1 → 141</dd></div>
+                  <div><dt>Drive</dt><dd>1 hr 4 min · 50 km</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="reel" data-reel="1"></div>
+        </article>
+
+        <article class="day" id="day-2" data-day="2" aria-labelledby="day-2-title">
+          <div class="day-inner">
+            <header class="day-head">
+              <p class="day-tag"><b>Day 02</b><span>Saturday, 1 August</span></p>
+              <h3 id="day-2-title">From clouds to steam</h3>
+              <p class="day-route">Zarcero <span aria-hidden="true">→</span> Arenal</p>
+            </header>
+            <div class="day-body">
+              <div class="day-text">
+              <p class="day-lede">
+                A long switchback descent into humid rainforest, with the volcano showing
+                up in the windscreen somewhere around La Fortuna. The afternoon is spent
+                doing nothing at all, in hot water, under the canopy.
+              </p>
+
+                <button class="btn btn-map" type="button" data-focus-map="2">Show day 2 on the map <span aria-hidden="true">↗</span></button>
+              </div>
+              <div class="day-meta">
+                <ul class="tags"><li>Roadside fruit</li><li>La Fortuna</li><li>Hot springs</li></ul>
+                <dl class="facts">
+                  <div><dt>Base</dt><dd>Tabacón</dd></div>
+                  <div><dt>Landscape</dt><dd>Volcanic rainforest</dd></div>
+                  <div><dt>Drive</dt><dd>1 hr 52 min · 82 km</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="reel" data-reel="2"></div>
+        </article>
+
+        <article class="day" id="day-3" data-day="3" aria-labelledby="day-3-title">
+          <div class="day-inner">
+            <header class="day-head">
+              <p class="day-tag"><b>Day 03</b><span>Sunday, 2 August</span></p>
+              <h3 id="day-3-title">Above the canopy</h3>
+              <p class="day-route">Místico hanging bridges</p>
+            </header>
+            <div class="day-body">
+              <div class="day-text">
+              <p class="day-lede">
+                Morning on the hanging bridges, level with the treetops and looking straight
+                down into the green. We come back after dark for the night hike, when the
+                forest swaps one whole cast of animals for another.
+              </p>
+
+                <button class="btn btn-map" type="button" data-focus-map="3">Show day 3 on the map <span aria-hidden="true">↗</span></button>
+              </div>
+              <div class="day-meta">
+                <ul class="tags"><li>Místico bridges</li><li>Wildlife</li><li>Night hike</li></ul>
+                <dl class="facts">
+                  <div><dt>Best light</dt><dd>Just after rain</dd></div>
+                  <div><dt>Pace</dt><dd>Slow and watchful</dd></div>
+                  <div><dt>Second outing</dt><dd>After sundown</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="reel" data-reel="3"></div>
+        </article>
+
+        <article class="day" id="day-4" data-day="4" aria-labelledby="day-4-title">
+          <div class="day-inner">
+            <header class="day-head">
+              <p class="day-tag"><b>Day 04</b><span>Monday, 3 August</span></p>
+              <h3 id="day-4-title">Chasing water</h3>
+              <p class="day-route">Waterfall rappelling &amp; cacao</p>
+            </header>
+            <div class="day-body">
+              <div class="day-text">
+              <p class="day-lede">
+                The loudest day of the trip. Harnesses on in the morning and over the lip of
+                a waterfall, one rope at a time. Dry clothes at lunch, then something much
+                calmer: cacao pods, a stone grinder, and chocolate we make ourselves.
+              </p>
+
+                <button class="btn btn-map" type="button" data-focus-map="4">Show day 4 on the map <span aria-hidden="true">↗</span></button>
+              </div>
+              <div class="day-meta">
+                <ul class="tags"><li>Waterfall rappel</li><li>Wet boots</li><li>Chocolate tour</li></ul>
+                <dl class="facts">
+                  <div><dt>Condition</dt><dd>Completely soaked</dd></div>
+                  <div><dt>Reward</dt><dd>Chocolate, obviously</dd></div>
+                  <div><dt>Base</dt><dd>Arenal</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="reel" data-reel="4"></div>
+        </article>
+
+        <article class="day" id="day-5" data-day="5" aria-labelledby="day-5-title">
+          <div class="day-inner">
+            <header class="day-head">
+              <p class="day-tag"><b>Day 05</b><span>Tuesday, 4 August</span></p>
+              <h3 id="day-5-title">A day with room to roam</h3>
+              <p class="day-route">Arenal / La Fortuna</p>
+            </header>
+            <div class="day-body">
+              <div class="day-text">
+              <p class="day-lede">
+                Nothing booked. The plan is whatever the weather allows: the waterfall, a
+                trail, a viewpoint, or one more long soak. Halfway through a trip, an empty
+                day is the best thing on the itinerary.
+              </p>
+
+                <button class="btn btn-map" type="button" data-focus-map="5">Show day 5 on the map <span aria-hidden="true">↗</span></button>
+              </div>
+              <div class="day-meta">
+                <ul class="tags"><li>Open day</li><li>La Fortuna waterfall</li><li>Volcano views</li></ul>
+                <dl class="facts">
+                  <div><dt>Rule of the day</dt><dd>Follow the weather</dd></div>
+                  <div><dt>Pace</dt><dd>Entirely ours</dd></div>
+                  <div><dt>Base</dt><dd>Arenal</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="reel" data-reel="5"></div>
+        </article>
+
+        <article class="day" id="day-6" data-day="6" aria-labelledby="day-6-title">
+          <div class="day-inner">
+            <header class="day-head">
+              <p class="day-tag"><b>Day 06</b><span>Wednesday, 5 August</span></p>
+              <h3 id="day-6-title">Crossing to the Pacific</h3>
+              <p class="day-route">Arenal <span aria-hidden="true">→</span> Uvita</p>
+            </header>
+            <div class="day-body">
+              <div class="day-text">
+              <p class="day-lede">
+                The big drive: nearly six hours south and west, from volcano country down to
+                the coast road, and a final climb up a ridge above Uvita — where the pool
+                stops and the whole Pacific starts.
+              </p>
+
+                <button class="btn btn-map" type="button" data-focus-map="6">Show day 6 on the map <span aria-hidden="true">↗</span></button>
+              </div>
+              <div class="day-meta">
+                <ul class="tags"><li>Full drive day</li><li>Vista Celestial</li><li>Ocean view</li></ul>
+                <dl class="facts">
+                  <div><dt>On the road</dt><dd>5 hr 39 min · 283 km</dd></div>
+                  <div><dt>Arrive</dt><dd>Before dark</dd></div>
+                  <div><dt>Stay</dt><dd>Vista Celestial</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="reel" data-reel="6"></div>
+        </article>
+
+        <article class="day" id="day-7" data-day="7" aria-labelledby="day-7-title">
+          <div class="day-inner">
+            <header class="day-head">
+              <p class="day-tag"><b>Day 07</b><span>Thursday, 6 August</span></p>
+              <h3 id="day-7-title">The wildest green</h3>
+              <p class="day-route">Uvita <span aria-hidden="true">→</span> Corcovado</p>
+            </header>
+            <div class="day-body">
+              <div class="day-text">
+              <p class="day-lede">
+                A boat down the coast to San Pedrillo ranger station, then on foot into
+                Corcovado — the densest, loudest, most alive place on the whole trip. Hot,
+                muddy, and worth every step.
+              </p>
+
+                <button class="btn btn-map" type="button" data-focus-map="7">Show day 7 on the map <span aria-hidden="true">↗</span></button>
+              </div>
+              <div class="day-meta">
+                <ul class="tags"><li>Boat crossing</li><li>San Pedrillo</li><li>National park</li></ul>
+                <dl class="facts">
+                  <div><dt>Ranger station</dt><dd>San Pedrillo</dd></div>
+                  <div><dt>Getting there</dt><dd>Boat, then boots</dd></div>
+                  <div><dt>Park</dt><dd>Corcovado</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="reel" data-reel="7"></div>
+        </article>
+
+        <article class="day" id="day-8" data-day="8" aria-labelledby="day-8-title">
+          <div class="day-inner">
+            <header class="day-head">
+              <p class="day-tag"><b>Day 08</b><span>Friday, 7 August</span></p>
+              <h3 id="day-8-title">Blue, below the surface</h3>
+              <p class="day-route">Uvita <span aria-hidden="true">→</span> Caño Island</p>
+            </header>
+            <div class="day-body">
+              <div class="day-text">
+              <p class="day-lede">
+                Back on the water, this time straight out to Isla del Caño. Masks on over
+                the reef, and a long ride home watching for anything that breaks the
+                surface. A day made entirely of blue.
+              </p>
+
+                <button class="btn btn-map" type="button" data-focus-map="8">Show day 8 on the map <span aria-hidden="true">↗</span></button>
+              </div>
+              <div class="day-meta">
+                <ul class="tags"><li>Caño Island</li><li>Snorkelling</li><li>Open water</li></ul>
+                <dl class="facts">
+                  <div><dt>Destination</dt><dd>Isla del Caño</dd></div>
+                  <div><dt>Getting there</dt><dd>Boat and mask</dd></div>
+                  <div><dt>Base</dt><dd>Uvita</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="reel" data-reel="8"></div>
+        </article>
+
+        <article class="day" id="day-9" data-day="9" aria-labelledby="day-9-title">
+          <div class="day-inner">
+            <header class="day-head">
+              <p class="day-tag"><b>Day 09</b><span>Saturday, 8 August</span></p>
+              <h3 id="day-9-title">Back over the mountains</h3>
+              <p class="day-route">Uvita <span aria-hidden="true">→</span> Irazú <span aria-hidden="true">→</span> San José</p>
+            </header>
+            <div class="day-body">
+              <div class="day-text">
+              <p class="day-lede">
+                An eight o'clock start and one last long drive: off the coast, up through
+                San Isidro and over the pass. We roll straight through Cartago and keep
+                climbing — all the way up to the crater rim of Irazú — before dropping down
+                to the airport and home.
+              </p>
+
+                <button class="btn btn-map" type="button" data-focus-map="9">Show day 9 on the map <span aria-hidden="true">↗</span></button>
+              </div>
+              <div class="day-meta">
+                <ul class="tags"><li>Irazú crater</li><li>Mountain pass</li><li>Until next time</li></ul>
+                <dl class="facts">
+                  <div><dt>Leave</dt><dd>8:00 AM</dd></div>
+                  <div><dt>High point</dt><dd>Irazú · 3,432 m</dd></div>
+                  <div><dt>Drive</dt><dd>6 hr 6 min · 296 km</dd></div>
+                  <div><dt>Flight</dt><dd>6:17 PM</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="reel" data-reel="9"></div>
+        </article>
+      </div>
+
+      <div class="band-divider" aria-hidden="true"></div>
+
+      <!-- ── Epilogue ── -->
+      <section class="outro">
+        <p class="eyebrow light">The part we'll keep</p>
+        <blockquote>The roads were<br />the <em>adventure, too</em></blockquote>
+        <p class="outro-copy">
+          Rain on the windscreen. Hot springs after a long drive. The forest getting
+          louder after dark. And all that blue, waiting offshore.
+        </p>
+        <a class="btn btn-primary" href="#top">Back to the beginning</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Made for the family archive</span>
+      <span aria-hidden="true">·</span>
+      <span>Costa Rica, 2026</span>
+    </footer>
+
+    <!-- ── Lightbox ── -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+      <button class="lb-close" type="button" aria-label="Close photo viewer">✕</button>
+      <button class="lb-nav lb-prev" type="button" aria-label="Previous photo">‹</button>
+      <figure class="lb-figure">
+        <div class="lb-stage" id="lb-stage"></div>
+        <figcaption><b id="lb-caption"></b><span id="lb-meta"></span></figcaption>
+      </figure>
+      <button class="lb-nav lb-next" type="button" aria-label="Next photo">›</button>
+    </div>
+
+    <script src="vendor/leaflet.js"></script>
+    <script src="assets/photos/photos.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
