@@ -33,7 +33,7 @@ VIDEO_SUFFIXES = {".mp4", ".mov"}
 MEDIA_SUFFIXES = IMAGE_SUFFIXES | VIDEO_SUFFIXES
 # Keep excluded media in the derivative set and R2 so restoring it only
 # requires removing an entry here and rebuilding the manifest.
-EXCLUDED_MEDIA = {(8, "photo", 9)}
+EXCLUDED_MEDIA = {(7, "photo", 30), (8, "photo", 9)}
 MEDIA_CAPTIONS = {
     (1, "photo", 1): "Ready for takeoff",
     (1, "photo", 2): "Seatmates for the flight south",

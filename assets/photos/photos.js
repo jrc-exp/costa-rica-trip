@@ -809,12 +809,6 @@ window.TRIP_PHOTOS = {
       "place": "6 August \u00b7 5:54 PM"
     },
     {
-      "src": "/r2/day-07/030.jpg",
-      "thumb": "/r2/thumbs/day-07/030.jpg",
-      "caption": "One quiet look at the rainforest",
-      "place": "6 August \u00b7 5:54 PM"
-    },
-    {
       "src": "/r2/day-07/031.jpg",
       "thumb": "/r2/thumbs/day-07/031.jpg",
       "caption": "Scarlet macaw close-up",
