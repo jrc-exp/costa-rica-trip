@@ -1,6 +1,12 @@
 [build]
   publish = "."
 
+[[redirects]]
+  from = "/r2/*"
+  to = "https://pub-c2ad619a6fe841c8875abf1bbe7e8be5.r2.dev/:splat"
+  status = 200
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
