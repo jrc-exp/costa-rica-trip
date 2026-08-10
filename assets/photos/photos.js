@@ -744,26 +744,26 @@ window.TRIP_PHOTOS = {
       "src": "/r2/videos/day-07/004.mp4",
       "thumb": "/r2/thumbs/videos/day-07/004.jpg",
       "type": "video",
-      "caption": "Low tide at Corcovado",
+      "caption": "Walking Uvita's Whale Tail at low tide",
       "place": "6 August \u00b7 3:15 PM"
     },
     {
       "src": "/r2/day-07/021.jpg",
       "thumb": "/r2/thumbs/day-07/021.jpg",
-      "caption": "A wave from the tidal flats",
+      "caption": "A wave from the Whale Tail",
       "place": "6 August \u00b7 3:16 PM"
     },
     {
       "src": "/r2/videos/day-07/005.mp4",
       "thumb": "/r2/thumbs/videos/day-07/005.jpg",
       "type": "video",
-      "caption": "Family selfie on the flats",
+      "caption": "Family selfie on the Whale Tail",
       "place": "6 August \u00b7 3:17 PM"
     },
     {
       "src": "/r2/day-07/022.jpg",
       "thumb": "/r2/thumbs/day-07/022.jpg",
-      "caption": "One last selfie before the boat",
+      "caption": "One last selfie at the Whale Tail",
       "place": "6 August \u00b7 3:18 PM"
     },
     {
