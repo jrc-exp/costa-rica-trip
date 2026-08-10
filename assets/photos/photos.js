@@ -927,12 +927,6 @@ window.TRIP_PHOTOS = {
       "place": "7 August \u00b7 3:55 PM"
     },
     {
-      "src": "/r2/day-08/009.jpg",
-      "thumb": "/r2/thumbs/day-08/009.jpg",
-      "caption": "Photo 9",
-      "place": "7 August \u00b7 4:05 PM"
-    },
-    {
       "src": "/r2/day-08/010.jpg",
       "thumb": "/r2/thumbs/day-08/010.jpg",
       "caption": "Photo 10",

@@ -279,8 +279,16 @@ function renderLightbox() {
   lbStage.innerHTML = item.pending
     ? scene(lbDay, lbIndex)
     : item.type === 'video'
-      ? `<video src="${item.src}" controls autoplay muted loop playsinline></video>`
+      ? `<video src="${item.src}" controls loop playsinline></video>`
       : `<img src="${item.src}" alt="${item.caption}" />`;
+  const video = lbStage.querySelector('video');
+  if (video) {
+    video.muted = false;
+    video.volume = 1;
+    video.play().catch(() => {
+      // Some browsers may still require the user to press Play.
+    });
+  }
   lbFullscreen.hidden = item.type !== 'video' || item.pending;
   lbCaption.textContent = item.caption;
   lbMeta.textContent = `Day ${lbDay} · ${item.place}${item.pending ? ' · photo to come' : ''}`;
