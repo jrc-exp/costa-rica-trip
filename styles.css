@@ -934,6 +934,7 @@ blockquote em { color: var(--marigold); }
   background: #0a2f21;
 }
 .lb-stage svg, .lb-stage img, .lb-stage video { width: 100%; height: 100%; object-fit: contain; }
+.lb-stage svg, .lb-stage img, .lb-figure figcaption { touch-action: pan-y; }
 .lb-fullscreen {
   position: absolute;
   z-index: 2;

@@ -262,6 +262,7 @@ const lbFullscreen = document.getElementById('lb-fullscreen');
 let lbDay = 1;
 let lbIndex = 0;
 let lastFocus = null;
+let lbSwipe = null;
 
 function openLightbox(day, index) {
   lbDay = day;
@@ -329,6 +330,21 @@ lb.querySelector('.lb-prev').addEventListener('click', () => stepLightbox(-1));
 lb.querySelector('.lb-next').addEventListener('click', () => stepLightbox(1));
 lbFullscreen.addEventListener('click', fullscreenVideo);
 lb.addEventListener('click', (e) => { if (e.target === lb) closeLightbox(); });
+lb.addEventListener('pointerdown', (e) => {
+  if (e.pointerType === 'mouse' || e.target.closest('button, video')) return;
+  lbSwipe = { pointerId: e.pointerId, x: e.clientX, y: e.clientY };
+  lb.setPointerCapture(e.pointerId);
+});
+lb.addEventListener('pointerup', (e) => {
+  if (!lbSwipe || e.pointerId !== lbSwipe.pointerId) return;
+  const dx = e.clientX - lbSwipe.x;
+  const dy = e.clientY - lbSwipe.y;
+  const minimum = Math.max(50, Math.min(90, lb.clientWidth * 0.15));
+  lbSwipe = null;
+  if (Math.abs(dx) < minimum || Math.abs(dx) <= Math.abs(dy) * 1.25) return;
+  stepLightbox(dx < 0 ? 1 : -1);
+});
+lb.addEventListener('pointercancel', () => { lbSwipe = null; });
 document.addEventListener('keydown', (e) => {
   if (lb.hidden) return;
   if (e.key === 'Escape') closeLightbox();

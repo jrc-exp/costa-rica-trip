@@ -324,7 +324,7 @@ window.TRIP_PHOTOS = {
     {
       "src": "/r2/day-04/001.jpg",
       "thumb": "/r2/thumbs/day-04/001.jpg",
-      "caption": "Lunch before the chocolate tour",
+      "caption": "Lunch before the coffee-and-chocolate tour",
       "place": "3 August \u00b7 1:20 PM"
     },
     {
@@ -345,20 +345,20 @@ window.TRIP_PHOTOS = {
       "src": "/r2/videos/day-04/003.mp4",
       "thumb": "/r2/thumbs/videos/day-04/003.jpg",
       "type": "video",
-      "caption": "Taking a turn at the cacao grinder",
+      "caption": "Taking a turn at the sugar-cane press",
       "place": "3 August \u00b7 3:52 PM"
     },
     {
       "src": "/r2/videos/day-04/004.mp4",
       "thumb": "/r2/thumbs/videos/day-04/004.jpg",
       "type": "video",
-      "caption": "Pressing fresh cacao beans",
+      "caption": "Fresh sugar cane through the rollers",
       "place": "3 August \u00b7 3:54 PM"
     },
     {
       "src": "/r2/day-04/002.jpg",
       "thumb": "/r2/thumbs/day-04/002.jpg",
-      "caption": "Hot chocolate after the tour",
+      "caption": "Coffee during the coffee-and-chocolate tour",
       "place": "3 August \u00b7 4:21 PM"
     }
   ],
