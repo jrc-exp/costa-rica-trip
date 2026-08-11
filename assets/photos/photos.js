@@ -745,7 +745,7 @@ window.TRIP_PHOTOS = {
       "src": "/r2/videos/day-07/003.mp4",
       "thumb": "/r2/thumbs/videos/day-07/003.jpg",
       "type": "video",
-      "caption": "Peccaries moving through the undergrowth",
+      "caption": "A tapir moving through the undergrowth",
       "place": "6 August \u00b7 11:31 AM"
     },
     {

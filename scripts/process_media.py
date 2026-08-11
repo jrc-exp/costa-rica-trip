@@ -226,7 +226,7 @@ NEW_MEDIA_CAPTIONS = {
     "PXL_20260806_131720135.jpg": "Ready to land at Corcovado",
     "PXL_20260806_162353677.jpg": "A coati on the rainforest floor",
     "IMG_2208.MOV": "A quick glimpse through the rainforest",
-    "PXL_20260806_173141168.LS.mp4": "Peccaries moving through the undergrowth",
+    "PXL_20260806_173141168.LS.mp4": "A tapir moving through the undergrowth",
     "PXL_20260806_183856383.LS.mp4": "One last rainforest sighting",
 }
 DAY_BY_DATE = {
