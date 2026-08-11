@@ -263,6 +263,19 @@ let lbDay = 1;
 let lbIndex = 0;
 let lastFocus = null;
 let lbSwipe = null;
+let activeVideoObserver = null;
+
+function pauseActiveVideo() {
+  lbStage.querySelector('video')?.pause();
+}
+
+function watchActiveVideo(video) {
+  activeVideoObserver?.disconnect();
+  activeVideoObserver = new IntersectionObserver((entries) => {
+    if (!entries[0].isIntersecting) video.pause();
+  }, { threshold: 0.25 });
+  activeVideoObserver.observe(video);
+}
 
 function openLightbox(day, index) {
   lbDay = day;
@@ -286,9 +299,13 @@ function renderLightbox() {
   if (video) {
     video.muted = false;
     video.volume = 1;
+    watchActiveVideo(video);
     video.play().catch(() => {
       // Some browsers may still require the user to press Play.
     });
+  } else {
+    activeVideoObserver?.disconnect();
+    activeVideoObserver = null;
   }
   lbFullscreen.hidden = item.type !== 'video' || item.pending;
   lbCaption.textContent = item.caption;
@@ -320,6 +337,9 @@ function stepLightbox(delta) {
 }
 
 function closeLightbox() {
+  pauseActiveVideo();
+  activeVideoObserver?.disconnect();
+  activeVideoObserver = null;
   lb.hidden = true;
   document.body.style.overflow = '';
   if (lastFocus) lastFocus.focus();
@@ -350,6 +370,9 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeLightbox();
   if (e.key === 'ArrowRight') stepLightbox(1);
   if (e.key === 'ArrowLeft') stepLightbox(-1);
+});
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) pauseActiveVideo();
 });
 
 /* ── Map ─────────────────────────────────────────────────────────────────── */
