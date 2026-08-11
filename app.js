@@ -332,6 +332,12 @@ async function fullscreenVideo() {
 
 function stepLightbox(delta) {
   const reel = reels.find((r) => r.day === lbDay);
+  if (delta > 0 && lbIndex === reel.items.length - 1) {
+    const nextDay = lbDay + 1;
+    closeLightbox();
+    if (nextDay <= reels.length) jumpToDay(nextDay);
+    return;
+  }
   lbIndex = (lbIndex + delta + reel.items.length) % reel.items.length;
   renderLightbox();
 }
