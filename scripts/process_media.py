@@ -215,6 +215,20 @@ MEDIA_CAPTIONS = {
     (9, "photo", 21): "Overlooking Cartago",
     (9, "photo", 22): "Back in the car for the airport",
 }
+# These files arrived after the original gallery and need their own descriptions.
+# All media is still numbered in strict capture-time order within its day.
+NEW_MEDIA_CAPTIONS = {
+    "IMG_1930.MOV": "A night-hike discovery in the leaves",
+    "PXL_20260803_011132742.mp4": "One more creature after dark",
+    "PXL_20260806_120911407.jpg": "A final Uvita overlook before Corcovado",
+    "PXL_20260806_131557040.TS-000.jpg": "Life jackets on for San Pedrillo",
+    "PXL_20260806_131615889.jpg": "A boat-ride selfie on the way south",
+    "PXL_20260806_131720135.jpg": "Ready to land at Corcovado",
+    "PXL_20260806_162353677.jpg": "A coati on the rainforest floor",
+    "IMG_2208.MOV": "A quick glimpse through the rainforest",
+    "PXL_20260806_173141168.LS.mp4": "Peccaries moving through the undergrowth",
+    "PXL_20260806_183856383.LS.mp4": "One last rainforest sighting",
+}
 DAY_BY_DATE = {
     "2026-07-31": 1,
     "2026-08-01": 2,
@@ -479,6 +493,19 @@ def main() -> int:
         records.append((taken, path, DAY_BY_DATE[date]))
     records.sort(key=lambda record: (record[2], record[0], record[1].name.lower()))
 
+    # Existing captions are ordinal-based. Record their original positions while
+    # excluding newly imported files, so adding media never transfers an old
+    # caption to a different photograph after chronological re-numbering.
+    legacy_keys = {}
+    legacy_counts = {}
+    for _, path, day in records:
+        if path.name in NEW_MEDIA_CAPTIONS:
+            continue
+        kind = "video" if path.suffix.lower() in VIDEO_SUFFIXES else "photo"
+        count_key = (day, kind)
+        legacy_counts[count_key] = legacy_counts.get(count_key, 0) + 1
+        legacy_keys[path.name] = (day, kind, legacy_counts[count_key])
+
     # Move top-level extracted originals into their day folders exactly once.
     organized = []
     for taken, path, day in records:
@@ -510,7 +537,10 @@ def main() -> int:
                 thumbnail = WEB / "thumbs" / f"day-{day:02d}" / f"{photo_number:03d}.jpg"
                 caption = f"Photo {photo_number}"
             media_key = (day, "video" if is_video else "photo", video_number if is_video else photo_number)
-            caption = MEDIA_CAPTIONS.get(media_key, caption)
+            if path.name in NEW_MEDIA_CAPTIONS:
+                caption = NEW_MEDIA_CAPTIONS[path.name]
+            else:
+                caption = MEDIA_CAPTIONS.get(legacy_keys[path.name], caption)
             requested_video = args.video is None or (is_video and video_number == args.video)
             if args.day in (None, day) and requested_video and (args.force or not output.exists()):
                 output.parent.mkdir(parents=True, exist_ok=True)

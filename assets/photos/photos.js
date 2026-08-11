@@ -318,6 +318,20 @@ window.TRIP_PHOTOS = {
       "thumb": "/r2/thumbs/day-03/019.jpg",
       "caption": "A sleepy sloth in the canopy",
       "place": "2 August \u00b7 7:06 PM"
+    },
+    {
+      "src": "/r2/videos/day-03/002.mp4",
+      "thumb": "/r2/thumbs/videos/day-03/002.jpg",
+      "type": "video",
+      "caption": "A night-hike discovery in the leaves",
+      "place": "2 August \u00b7 7:11 PM"
+    },
+    {
+      "src": "/r2/videos/day-03/003.mp4",
+      "thumb": "/r2/thumbs/videos/day-03/003.jpg",
+      "type": "video",
+      "caption": "One more creature after dark",
+      "place": "2 August \u00b7 7:12 PM"
     }
   ],
   "4": [
@@ -602,12 +616,36 @@ window.TRIP_PHOTOS = {
     {
       "src": "/r2/day-07/001.jpg",
       "thumb": "/r2/thumbs/day-07/001.jpg",
-      "caption": "Boat ride to Corcovado",
-      "place": "6 August \u00b7 8:39 AM"
+      "caption": "A final Uvita overlook before Corcovado",
+      "place": "6 August \u00b7 6:09 AM"
     },
     {
       "src": "/r2/day-07/002.jpg",
       "thumb": "/r2/thumbs/day-07/002.jpg",
+      "caption": "Life jackets on for San Pedrillo",
+      "place": "6 August \u00b7 7:15 AM"
+    },
+    {
+      "src": "/r2/day-07/003.jpg",
+      "thumb": "/r2/thumbs/day-07/003.jpg",
+      "caption": "A boat-ride selfie on the way south",
+      "place": "6 August \u00b7 7:16 AM"
+    },
+    {
+      "src": "/r2/day-07/004.jpg",
+      "thumb": "/r2/thumbs/day-07/004.jpg",
+      "caption": "Ready to land at Corcovado",
+      "place": "6 August \u00b7 7:17 AM"
+    },
+    {
+      "src": "/r2/day-07/005.jpg",
+      "thumb": "/r2/thumbs/day-07/005.jpg",
+      "caption": "Boat ride to Corcovado",
+      "place": "6 August \u00b7 8:39 AM"
+    },
+    {
+      "src": "/r2/day-07/006.jpg",
+      "thumb": "/r2/thumbs/day-07/006.jpg",
       "caption": "Welcome to San Pedrillo",
       "place": "6 August \u00b7 9:06 AM"
     },
@@ -619,50 +657,56 @@ window.TRIP_PHOTOS = {
       "place": "6 August \u00b7 9:15 AM"
     },
     {
-      "src": "/r2/day-07/003.jpg",
-      "thumb": "/r2/thumbs/day-07/003.jpg",
+      "src": "/r2/day-07/007.jpg",
+      "thumb": "/r2/thumbs/day-07/007.jpg",
       "caption": "Golden orb-weaver in her web",
       "place": "6 August \u00b7 9:22 AM"
     },
     {
-      "src": "/r2/day-07/004.jpg",
-      "thumb": "/r2/thumbs/day-07/004.jpg",
+      "src": "/r2/day-07/008.jpg",
+      "thumb": "/r2/thumbs/day-07/008.jpg",
       "caption": "A monkey high in the canopy",
       "place": "6 August \u00b7 9:40 AM"
     },
     {
-      "src": "/r2/day-07/005.jpg",
-      "thumb": "/r2/thumbs/day-07/005.jpg",
+      "src": "/r2/day-07/009.jpg",
+      "thumb": "/r2/thumbs/day-07/009.jpg",
       "caption": "Something hiding in the vines",
       "place": "6 August \u00b7 9:54 AM"
     },
     {
-      "src": "/r2/day-07/006.jpg",
-      "thumb": "/r2/thumbs/day-07/006.jpg",
+      "src": "/r2/day-07/010.jpg",
+      "thumb": "/r2/thumbs/day-07/010.jpg",
       "caption": "An owl tucked into the branches",
       "place": "6 August \u00b7 10:10 AM"
     },
     {
-      "src": "/r2/day-07/007.jpg",
-      "thumb": "/r2/thumbs/day-07/007.jpg",
+      "src": "/r2/day-07/011.jpg",
+      "thumb": "/r2/thumbs/day-07/011.jpg",
       "caption": "A woodpecker at work",
       "place": "6 August \u00b7 10:13 AM"
     },
     {
-      "src": "/r2/day-07/008.jpg",
-      "thumb": "/r2/thumbs/day-07/008.jpg",
+      "src": "/r2/day-07/012.jpg",
+      "thumb": "/r2/thumbs/day-07/012.jpg",
       "caption": "Leafcutter ants on the march",
       "place": "6 August \u00b7 10:21 AM"
     },
     {
-      "src": "/r2/day-07/009.jpg",
-      "thumb": "/r2/thumbs/day-07/009.jpg",
+      "src": "/r2/day-07/013.jpg",
+      "thumb": "/r2/thumbs/day-07/013.jpg",
+      "caption": "A coati on the rainforest floor",
+      "place": "6 August \u00b7 10:23 AM"
+    },
+    {
+      "src": "/r2/day-07/014.jpg",
+      "thumb": "/r2/thumbs/day-07/014.jpg",
       "caption": "Owl eyes in the rainforest",
       "place": "6 August \u00b7 10:32 AM"
     },
     {
-      "src": "/r2/day-07/010.jpg",
-      "thumb": "/r2/thumbs/day-07/010.jpg",
+      "src": "/r2/day-07/015.jpg",
+      "thumb": "/r2/thumbs/day-07/015.jpg",
       "caption": "Scarlet macaw in the canopy",
       "place": "6 August \u00b7 10:36 AM"
     },
@@ -674,185 +718,206 @@ window.TRIP_PHOTOS = {
       "place": "6 August \u00b7 10:36 AM"
     },
     {
-      "src": "/r2/day-07/011.jpg",
-      "thumb": "/r2/thumbs/day-07/011.jpg",
+      "src": "/r2/day-07/016.jpg",
+      "thumb": "/r2/thumbs/day-07/016.jpg",
       "caption": "Trail snack in San Pedrillo",
       "place": "6 August \u00b7 10:38 AM"
     },
     {
-      "src": "/r2/day-07/012.jpg",
-      "thumb": "/r2/thumbs/day-07/012.jpg",
+      "src": "/r2/day-07/017.jpg",
+      "thumb": "/r2/thumbs/day-07/017.jpg",
       "caption": "Rainforest smiles",
       "place": "6 August \u00b7 10:41 AM"
     },
     {
-      "src": "/r2/day-07/013.jpg",
-      "thumb": "/r2/thumbs/day-07/013.jpg",
+      "src": "/r2/day-07/018.jpg",
+      "thumb": "/r2/thumbs/day-07/018.jpg",
       "caption": "Beachcombers at San Pedrillo",
       "place": "6 August \u00b7 10:41 AM"
     },
     {
-      "src": "/r2/day-07/014.jpg",
-      "thumb": "/r2/thumbs/day-07/014.jpg",
-      "caption": "At the edge of Corcovado",
-      "place": "6 August \u00b7 10:44 AM"
-    },
-    {
-      "src": "/r2/day-07/015.jpg",
-      "thumb": "/r2/thumbs/day-07/015.jpg",
-      "caption": "Tracks in the sand",
-      "place": "6 August \u00b7 11:43 AM"
-    },
-    {
-      "src": "/r2/day-07/016.jpg",
-      "thumb": "/r2/thumbs/day-07/016.jpg",
-      "caption": "A tropical bird on watch",
-      "place": "6 August \u00b7 12:07 PM"
-    },
-    {
-      "src": "/r2/day-07/017.jpg",
-      "thumb": "/r2/thumbs/day-07/017.jpg",
-      "caption": "Four hikers beneath a forest giant",
-      "place": "6 August \u00b7 12:18 PM"
-    },
-    {
-      "src": "/r2/day-07/018.jpg",
-      "thumb": "/r2/thumbs/day-07/018.jpg",
-      "caption": "Corcovado beach portrait",
-      "place": "6 August \u00b7 12:31 PM"
-    },
-    {
       "src": "/r2/day-07/019.jpg",
       "thumb": "/r2/thumbs/day-07/019.jpg",
-      "caption": "Rocky shoreline at low tide",
-      "place": "6 August \u00b7 12:31 PM"
+      "caption": "At the edge of Corcovado",
+      "place": "6 August \u00b7 10:44 AM"
     },
     {
       "src": "/r2/videos/day-07/003.mp4",
       "thumb": "/r2/thumbs/videos/day-07/003.jpg",
       "type": "video",
-      "caption": "Wading ashore at San Pedrillo",
-      "place": "6 August \u00b7 1:06 PM"
+      "caption": "Peccaries moving through the undergrowth",
+      "place": "6 August \u00b7 11:31 AM"
     },
     {
       "src": "/r2/day-07/020.jpg",
       "thumb": "/r2/thumbs/day-07/020.jpg",
-      "caption": "Back across the tidal flats",
-      "place": "6 August \u00b7 1:06 PM"
+      "caption": "Tracks in the sand",
+      "place": "6 August \u00b7 11:43 AM"
+    },
+    {
+      "src": "/r2/day-07/021.jpg",
+      "thumb": "/r2/thumbs/day-07/021.jpg",
+      "caption": "A tropical bird on watch",
+      "place": "6 August \u00b7 12:07 PM"
+    },
+    {
+      "src": "/r2/day-07/022.jpg",
+      "thumb": "/r2/thumbs/day-07/022.jpg",
+      "caption": "Four hikers beneath a forest giant",
+      "place": "6 August \u00b7 12:18 PM"
+    },
+    {
+      "src": "/r2/day-07/023.jpg",
+      "thumb": "/r2/thumbs/day-07/023.jpg",
+      "caption": "Corcovado beach portrait",
+      "place": "6 August \u00b7 12:31 PM"
+    },
+    {
+      "src": "/r2/day-07/024.jpg",
+      "thumb": "/r2/thumbs/day-07/024.jpg",
+      "caption": "Rocky shoreline at low tide",
+      "place": "6 August \u00b7 12:31 PM"
     },
     {
       "src": "/r2/videos/day-07/004.mp4",
       "thumb": "/r2/thumbs/videos/day-07/004.jpg",
       "type": "video",
-      "caption": "Walking Uvita's Whale Tail at low tide",
-      "place": "6 August \u00b7 3:15 PM"
-    },
-    {
-      "src": "/r2/day-07/021.jpg",
-      "thumb": "/r2/thumbs/day-07/021.jpg",
-      "caption": "A wave from the Whale Tail",
-      "place": "6 August \u00b7 3:16 PM"
+      "caption": "One last rainforest sighting",
+      "place": "6 August \u00b7 12:38 PM"
     },
     {
       "src": "/r2/videos/day-07/005.mp4",
       "thumb": "/r2/thumbs/videos/day-07/005.jpg",
       "type": "video",
-      "caption": "Family selfie on the Whale Tail",
-      "place": "6 August \u00b7 3:17 PM"
+      "caption": "A quick glimpse through the rainforest",
+      "place": "6 August \u00b7 12:57 PM"
     },
     {
-      "src": "/r2/day-07/022.jpg",
-      "thumb": "/r2/thumbs/day-07/022.jpg",
-      "caption": "One last selfie at the Whale Tail",
-      "place": "6 August \u00b7 3:18 PM"
-    },
-    {
-      "src": "/r2/day-07/023.jpg",
-      "thumb": "/r2/thumbs/day-07/023.jpg",
-      "caption": "Dressed for dinner above Uvita",
-      "place": "6 August \u00b7 5:48 PM"
-    },
-    {
-      "src": "/r2/day-07/024.jpg",
-      "thumb": "/r2/thumbs/day-07/024.jpg",
-      "caption": "Mother and son at sunset",
-      "place": "6 August \u00b7 5:48 PM"
+      "src": "/r2/videos/day-07/006.mp4",
+      "thumb": "/r2/thumbs/videos/day-07/006.jpg",
+      "type": "video",
+      "caption": "Wading ashore at San Pedrillo",
+      "place": "6 August \u00b7 1:06 PM"
     },
     {
       "src": "/r2/day-07/025.jpg",
       "thumb": "/r2/thumbs/day-07/025.jpg",
-      "caption": "Wrapped up at the overlook",
-      "place": "6 August \u00b7 5:49 PM"
+      "caption": "Back across the tidal flats",
+      "place": "6 August \u00b7 1:06 PM"
+    },
+    {
+      "src": "/r2/videos/day-07/007.mp4",
+      "thumb": "/r2/thumbs/videos/day-07/007.jpg",
+      "type": "video",
+      "caption": "Walking Uvita's Whale Tail at low tide",
+      "place": "6 August \u00b7 3:15 PM"
     },
     {
       "src": "/r2/day-07/026.jpg",
       "thumb": "/r2/thumbs/day-07/026.jpg",
-      "caption": "Together above the rainforest",
-      "place": "6 August \u00b7 5:50 PM"
+      "caption": "A wave from the Whale Tail",
+      "place": "6 August \u00b7 3:16 PM"
+    },
+    {
+      "src": "/r2/videos/day-07/008.mp4",
+      "thumb": "/r2/thumbs/videos/day-07/008.jpg",
+      "type": "video",
+      "caption": "Family selfie on the Whale Tail",
+      "place": "6 August \u00b7 3:17 PM"
     },
     {
       "src": "/r2/day-07/027.jpg",
       "thumb": "/r2/thumbs/day-07/027.jpg",
-      "caption": "A sunset kiss above Uvita",
-      "place": "6 August \u00b7 5:51 PM"
+      "caption": "One last selfie at the Whale Tail",
+      "place": "6 August \u00b7 3:18 PM"
     },
     {
       "src": "/r2/day-07/028.jpg",
       "thumb": "/r2/thumbs/day-07/028.jpg",
-      "caption": "Mother-daughter dinner portrait",
-      "place": "6 August \u00b7 5:52 PM"
+      "caption": "Dressed for dinner above Uvita",
+      "place": "6 August \u00b7 5:48 PM"
     },
     {
       "src": "/r2/day-07/029.jpg",
       "thumb": "/r2/thumbs/day-07/029.jpg",
-      "caption": "Watching the mist roll through",
-      "place": "6 August \u00b7 5:54 PM"
+      "caption": "Mother and son at sunset",
+      "place": "6 August \u00b7 5:48 PM"
     },
     {
       "src": "/r2/day-07/031.jpg",
       "thumb": "/r2/thumbs/day-07/031.jpg",
-      "caption": "Scarlet macaw close-up",
-      "place": "6 August \u00b7 6:34 PM"
+      "caption": "Together above the rainforest",
+      "place": "6 August \u00b7 5:50 PM"
     },
     {
       "src": "/r2/day-07/032.jpg",
       "thumb": "/r2/thumbs/day-07/032.jpg",
-      "caption": "Firelight after Corcovado",
-      "place": "6 August \u00b7 8:10 PM"
+      "caption": "A sunset kiss above Uvita",
+      "place": "6 August \u00b7 5:51 PM"
     },
     {
       "src": "/r2/day-07/033.jpg",
       "thumb": "/r2/thumbs/day-07/033.jpg",
-      "caption": "A nightcap by the fire",
-      "place": "6 August \u00b7 8:12 PM"
+      "caption": "Mother-daughter dinner portrait",
+      "place": "6 August \u00b7 5:52 PM"
     },
     {
       "src": "/r2/day-07/034.jpg",
       "thumb": "/r2/thumbs/day-07/034.jpg",
-      "caption": "Toasting by the firepit",
-      "place": "6 August \u00b7 8:13 PM"
+      "caption": "Watching the mist roll through",
+      "place": "6 August \u00b7 5:54 PM"
     },
     {
       "src": "/r2/day-07/035.jpg",
       "thumb": "/r2/thumbs/day-07/035.jpg",
-      "caption": "Firelight portrait",
-      "place": "6 August \u00b7 8:14 PM"
+      "caption": "One quiet look at the rainforest",
+      "place": "6 August \u00b7 5:54 PM"
     },
     {
       "src": "/r2/day-07/036.jpg",
       "thumb": "/r2/thumbs/day-07/036.jpg",
-      "caption": "An evening by the firepit",
-      "place": "6 August \u00b7 8:14 PM"
+      "caption": "Scarlet macaw close-up",
+      "place": "6 August \u00b7 6:34 PM"
     },
     {
       "src": "/r2/day-07/037.jpg",
       "thumb": "/r2/thumbs/day-07/037.jpg",
-      "caption": "A green visitor after dark",
-      "place": "6 August \u00b7 9:16 PM"
+      "caption": "Firelight after Corcovado",
+      "place": "6 August \u00b7 8:10 PM"
     },
     {
       "src": "/r2/day-07/038.jpg",
       "thumb": "/r2/thumbs/day-07/038.jpg",
+      "caption": "A nightcap by the fire",
+      "place": "6 August \u00b7 8:12 PM"
+    },
+    {
+      "src": "/r2/day-07/039.jpg",
+      "thumb": "/r2/thumbs/day-07/039.jpg",
+      "caption": "Toasting by the firepit",
+      "place": "6 August \u00b7 8:13 PM"
+    },
+    {
+      "src": "/r2/day-07/040.jpg",
+      "thumb": "/r2/thumbs/day-07/040.jpg",
+      "caption": "Firelight portrait",
+      "place": "6 August \u00b7 8:14 PM"
+    },
+    {
+      "src": "/r2/day-07/041.jpg",
+      "thumb": "/r2/thumbs/day-07/041.jpg",
+      "caption": "An evening by the firepit",
+      "place": "6 August \u00b7 8:14 PM"
+    },
+    {
+      "src": "/r2/day-07/042.jpg",
+      "thumb": "/r2/thumbs/day-07/042.jpg",
+      "caption": "A green visitor after dark",
+      "place": "6 August \u00b7 9:16 PM"
+    },
+    {
+      "src": "/r2/day-07/043.jpg",
+      "thumb": "/r2/thumbs/day-07/043.jpg",
       "caption": "Leaf wings in perfect camouflage",
       "place": "6 August \u00b7 9:23 PM"
     }

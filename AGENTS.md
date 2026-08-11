@@ -42,8 +42,8 @@ There are two media trees:
 - `assets/Costa Rica/day-XX/` contains the original camera files. It is local
   source material and is about 1.6 GB; it must not be committed or uploaded as
   part of the website deployment.
-- `assets/photos/` contains generated web derivatives: 180 optimized images
-  and videos, about 243 MB total. These files are kept in R2, not Git.
+- `assets/photos/` contains generated web derivatives. These files are kept in
+  R2, not Git.
 
 `scripts/process_media.py` converts the originals into the web derivatives and
 generates `assets/photos/photos.js`. Useful options include:
@@ -54,17 +54,48 @@ python3 scripts/process_media.py --force
 python3 scripts/process_media.py --day 1
 ```
 
+### Adding a new photo archive
+
+1. Inspect the archive before extracting it. Keep the ZIP itself local and
+   ignored; do not commit it.
+2. Extract the camera originals into `assets/Costa Rica/`. The processor reads
+   capture metadata, moves each file into its matching `day-XX/` directory, and
+   refuses to overwrite an existing original. If an archive contains a file
+   already present in a day directory, verify it is identical and do not create
+   a second top-level copy.
+3. Add a clear, human description for each newly included item in
+   `NEW_MEDIA_CAPTIONS` in `scripts/process_media.py`. The processor keeps each
+   day's gallery in strict capture-time order. A rebuild may therefore change
+   R2 object numbers; this is expected, and all regenerated derivatives must be
+   uploaded before publishing the matching manifest.
+4. Run the processor for each affected day, for example:
+
+   ```sh
+   python3 scripts/process_media.py --day 7
+   ```
+
+   Still images are auto-oriented and converted to progressive JPEGs with a
+   maximum 1800px long edge. Videos become streamable H.264 MP4s, and every
+   image and video receives a 640×480 carousel thumbnail.
+5. Review the generated `assets/photos/photos.js`. It must reference `/r2/`
+   URLs and must include the new captions, dates, media types, and thumbnail
+   paths. Do not hand-edit a generated manifest unless recovering from a failed
+   build; fix the caption data and rebuild instead.
+6. Upload the generated media (but never `photos.js`) to R2, then force-add and
+   commit only the manifest and any processing-script changes. Originals, ZIPs,
+   and generated binaries remain ignored.
+
 The committed `assets/photos/photos.js` is the small exception to the ignored
 `assets/photos/` directory. It defines `window.TRIP_PHOTOS` and its media URLs
 use same-origin `/r2/...` paths. This manifest must remain local to the site:
 loading the manifest directly from R2 can block `app.js` before the map and
 carousels initialize.
 
-If the media script regenerates the manifest, rewrite its generated paths to
-the Netlify proxy before committing:
+The processor is configured to generate same-origin Netlify-proxy paths. Check
+that it continues to do so before committing:
 
 ```sh
-sed -i 's#assets/photos/#/r2/#g' assets/photos/photos.js
+rg '"src": "/r2/|"thumb": "/r2/' assets/photos/photos.js
 git add -f assets/photos/photos.js
 ```
 
