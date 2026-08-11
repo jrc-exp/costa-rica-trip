@@ -490,7 +490,7 @@ window.TRIP_PHOTOS = {
     {
       "src": "/r2/day-06/001.jpg",
       "thumb": "/r2/thumbs/day-06/001.jpg",
-      "caption": "Coffee stop at Caf\u00e9 Sloffee",
+      "caption": "Coffee stop at Sloffee Coffee",
       "place": "5 August \u00b7 9:32 AM"
     },
     {

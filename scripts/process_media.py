@@ -112,7 +112,7 @@ MEDIA_CAPTIONS = {
     (5, "photo", 17): "Dinner companions in La Fortuna",
     (5, "photo", 18): "A tableside visit from the house cat",
     (5, "video", 2): "Making friends with the dinner cat",
-    (6, "photo", 1): "Coffee stop at Café Sloffee",
+    (6, "photo", 1): "Coffee stop at Sloffee Coffee",
     (6, "photo", 2): "Leaving our mark on the coffee wall",
     (6, "photo", 3): "Coffee for the long drive south",
     (6, "photo", 4): "Road-trip lunch on the Costanera",
