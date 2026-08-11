@@ -259,6 +259,7 @@ const lbStage = document.getElementById('lb-stage');
 const lbCaption = document.getElementById('lb-caption');
 const lbMeta = document.getElementById('lb-meta');
 const lbFullscreen = document.getElementById('lb-fullscreen');
+const lbShare = document.getElementById('lb-share');
 let lbDay = 1;
 let lbIndex = 0;
 let lastFocus = null;
@@ -275,6 +276,14 @@ function watchActiveVideo(video) {
     if (!entries[0].isIntersecting) video.pause();
   }, { threshold: 0.25 });
   activeVideoObserver.observe(video);
+}
+
+function lightboxHash(day = lbDay, index = lbIndex) {
+  return `#day-${day}/photo-${index + 1}`;
+}
+
+function setLightboxUrl() {
+  history.replaceState(null, '', lightboxHash());
 }
 
 function openLightbox(day, index) {
@@ -311,6 +320,7 @@ function renderLightbox() {
   lbCaption.textContent = item.caption;
   lbMeta.textContent = `Day ${lbDay} · ${item.place}${item.pending ? ' · photo to come' : ''}`;
   goTo(reel, lbIndex);
+  setLightboxUrl();
 }
 
 async function fullscreenVideo() {
@@ -334,20 +344,24 @@ function stepLightbox(delta) {
   const reel = reels.find((r) => r.day === lbDay);
   if (delta > 0 && lbIndex === reel.items.length - 1) {
     const nextDay = lbDay + 1;
-    closeLightbox();
-    if (nextDay <= reels.length) jumpToDay(nextDay);
+    closeLightbox({ keepUrl: true });
+    if (nextDay <= reels.length) {
+      history.replaceState(null, '', `#day-${nextDay}`);
+      jumpToDay(nextDay);
+    }
     return;
   }
   lbIndex = (lbIndex + delta + reel.items.length) % reel.items.length;
   renderLightbox();
 }
 
-function closeLightbox() {
+function closeLightbox({ keepUrl = false } = {}) {
   pauseActiveVideo();
   activeVideoObserver?.disconnect();
   activeVideoObserver = null;
   lb.hidden = true;
   document.body.style.overflow = '';
+  if (!keepUrl) history.replaceState(null, '', `#day-${lbDay}`);
   if (lastFocus) lastFocus.focus();
 }
 
@@ -355,6 +369,18 @@ lb.querySelector('.lb-close').addEventListener('click', closeLightbox);
 lb.querySelector('.lb-prev').addEventListener('click', () => stepLightbox(-1));
 lb.querySelector('.lb-next').addEventListener('click', () => stepLightbox(1));
 lbFullscreen.addEventListener('click', fullscreenVideo);
+lbShare.addEventListener('click', async () => {
+  const data = { title: lbCaption.textContent, text: lbMeta.textContent, url: window.location.href };
+  try {
+    if (navigator.share) {
+      await navigator.share(data);
+    } else if (navigator.clipboard) {
+      await navigator.clipboard.writeText(data.url);
+    }
+  } catch (_) {
+    // Dismissing the native share sheet is not an error the page needs to show.
+  }
+});
 lb.addEventListener('click', (e) => { if (e.target === lb) closeLightbox(); });
 lb.addEventListener('pointerdown', (e) => {
   if (e.pointerType === 'mouse' || e.target.closest('button, video')) return;
@@ -380,6 +406,24 @@ document.addEventListener('keydown', (e) => {
 document.addEventListener('visibilitychange', () => {
   if (document.hidden) pauseActiveVideo();
 });
+
+function openLinkedMedia() {
+  const match = window.location.hash.match(/^#day-(\d+)\/photo-(\d+)$/);
+  if (!match) {
+    if (!lb.hidden) closeLightbox({ keepUrl: true });
+    return;
+  }
+  const day = Number(match[1]);
+  const index = Number(match[2]) - 1;
+  const reel = reels.find((candidate) => candidate.day === day);
+  if (!reel || index < 0 || index >= reel.items.length) return;
+  if (!lb.hidden && lbDay === day && lbIndex === index) return;
+  document.getElementById(`day-${day}`).scrollIntoView({ block: 'start' });
+  openLightbox(day, index);
+}
+
+window.addEventListener('hashchange', openLinkedMedia);
+openLinkedMedia();
 
 /* ── Map ─────────────────────────────────────────────────────────────────── */
 const stops = {
